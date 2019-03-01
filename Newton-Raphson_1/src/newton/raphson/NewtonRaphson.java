@@ -27,6 +27,7 @@ public class NewtonRaphson {
         for (int i = 0; i <= MaxPot; i++) {
             System.out.println("Ingrese el valor de x^" + i);
             Numeros[i][0] = scan.nextDouble();
+            Numeros[i][1] = i;
             
         }
         System.out.println("Ingrese el punto de partida para la ecuacion");
@@ -34,7 +35,7 @@ public class NewtonRaphson {
         System.out.println("Ingrese el error maximo");
         Error = scan.nextDouble();
         
-        Calculo calculo = new Calculo(Numeros, MaxPot, Inicio, Error);
+        Calculo calculo = new Calculo(Numeros, MaxPot, Error);
         double x = calculo.operacion(Inicio);
         System.out.println(x);
     }
