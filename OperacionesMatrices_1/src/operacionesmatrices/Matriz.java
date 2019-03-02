@@ -53,21 +53,43 @@ public class Matriz {
             return null;
         }
     }
-    /**
-     * TODO: Arreglar esto
-     * @param m1
-     * @return 
-     */
+
     public Matriz mult(Matriz m1){
         if(this.col == m1.fil){
             double[][] res = new double[this.fil][m1.col];
             for(indexF = 0; indexF < fil; indexF++){
                 for (indexC = 0; indexC < col; indexC++) {
-                    for (int i = 0; i < this.fil; i++) {
-                        
+                    for (int i = 0; i < 3; i++) {
+                        res[indexF][indexC] += this.matriz[indexF][i] * m1.matriz[i][indexC];
                     }
                 }
             }
+            return new Matriz(res);
+        }else{
+            return null;
+        }
+    }
+    
+    public Matriz traspuesta(){
+        double [][] res = new double[this.col][this.fil];
+        for (indexF = 0; indexF < this.fil; indexF++) {
+            for (indexC = 0; indexC < this.col; indexC++) {
+                res[indexF][indexC] = this.matriz[indexC][indexF];
+            }
+        }
+        return new Matriz(res);
+    }
+    
+    public Matriz inversa(){
+        if(this.fil == this.col){
+            double [][] res = new double [this.fil*2][this.col*2];
+            for (int indexC = 0; indexC < this.col; indexC++) {
+                for (int indexF = 0; indexF < this.fil; indexF++) {
+                    res[indexF][indexC] = this.matriz[indexF][indexC];
+                }
+            }
+            
+            
             return new Matriz(res);
         }else{
             return null;
