@@ -5,8 +5,6 @@
  */
 package operacionesmatrices;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Agustin
@@ -24,6 +22,26 @@ public class Matriz {
     
     public Matriz(double[][] matriz){
         this.matriz = matriz;
+        this.fil = matriz.length;
+        this.col = matriz[0].length;
+    }
+    
+    public void addElement(int posF, int posC, double val){
+        matriz[posF][posC] = val;
+    }
+    
+    @Override
+    public String toString(){
+        String mastringz = "";
+        for (indexF = 0; indexF < this.fil; indexF++) {
+            mastringz += "|";
+            for (indexC = 0; indexC < this.col; indexC++) {
+                mastringz += matriz[indexF][indexC];
+                mastringz += (indexC != this.col-1)? ", ": "";
+            }
+            mastringz +="|\n";
+        }
+        return mastringz;
     }
     
     public Matriz suma(Matriz m1) {
@@ -71,24 +89,50 @@ public class Matriz {
     }
     
     public Matriz traspuesta(){
-        double [][] res = new double[this.col][this.fil];
-        for (indexF = 0; indexF < this.fil; indexF++) {
-            for (indexC = 0; indexC < this.col; indexC++) {
-                res[indexF][indexC] = this.matriz[indexC][indexF];
+        if(this.fil == this.col){
+            double [][] res = new double[this.col][this.fil];
+            for (indexF = 0; indexF < this.fil; indexF++) {
+                for (indexC = 0; indexC < this.col; indexC++) {
+                    res[indexF][indexC] = this.matriz[indexC][indexF];
+                }
             }
+            return new Matriz(res);
+        }else{
+            return null;
         }
-        return new Matriz(res);
     }
     
     public Matriz inversa(){
         if(this.fil == this.col){
-            double [][] res = new double [this.fil*2][this.col*2];
-            for (int indexC = 0; indexC < this.col; indexC++) {
-                for (int indexF = 0; indexF < this.fil; indexF++) {
-                    res[indexF][indexC] = this.matriz[indexF][indexC];
+            double [][] res = new double [this.fil][this.col*2];
+            for (indexC = 0; indexC < this.col*2; indexC++) {
+                for (indexF = 0; indexF < this.fil; indexF++) {
+                    res[indexF][indexC] = (indexC < this.col) ? this.matriz[indexF][indexC] : (indexC - this.col != indexF) ? 0 : 1;
                 }
             }
             
+            System.out.println(new Matriz(res));
+            System.out.println("");
+            
+            for (int i = 0; i< this.fil; i++) {
+                double piv = res[i][i];
+                double[][] mult = new double[this.fil][this.col];
+                
+                for (int j = 0; j < mult.length; j++) {
+                    mult [j][0]= res[j][i];
+                }
+                //System.out.println(new Matriz(mult));
+                for (indexC = 0; indexC < this.col*2; indexC++) {
+                    res[i][indexC] = res[i][indexC] / piv;
+                }
+                for (indexF = 0; indexF < this.fil; indexF++) {
+                    for ( indexC = 0; indexC < this.col * 2; indexC++) {
+                        res[indexF][indexC] = (indexF != i) ? res[indexF][indexC]*mult[indexF][0] : res[indexF][indexC];
+                    }
+                }
+                System.out.println(new Matriz(res) + "\n");
+
+            }
             
             return new Matriz(res);
         }else{
