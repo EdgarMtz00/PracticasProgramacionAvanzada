@@ -118,16 +118,20 @@ public class Matriz {
                 double piv = res[i][i];
                 double[][] mult = new double[this.fil][this.col];
                 
+                
                 for (int j = 0; j < mult.length; j++) {
                     mult [j][0]= res[j][i];
                 }
+                
                 //System.out.println(new Matriz(mult));
                 for (indexC = 0; indexC < this.col*2; indexC++) {
                     res[i][indexC] = res[i][indexC] / piv;
                 }
+                
+                
                 for (indexF = 0; indexF < this.fil; indexF++) {
                     for ( indexC = 0; indexC < this.col * 2; indexC++) {
-                        res[indexF][indexC] = (indexF != i) ? res[indexF][indexC]*mult[indexF][0] : res[indexF][indexC];
+                        res[indexF][indexC] = (indexF != i) ? res[indexF][indexC] - res[i][indexC]*mult[indexF][0] : res[indexF][indexC];
                     }
                 }
                 System.out.println(new Matriz(res) + "\n");
@@ -138,5 +142,50 @@ public class Matriz {
         }else{
             return null;
         }
+    }
+    
+    /*public double determinante(){
+        double det;
+        
+    }*/
+    
+    public void luDecomposition(){
+        if(this.fil == this.col){
+            int n = this.fil;
+            double[][] lower = new double[n][n];
+            double[][] upper = new double[n][n];
+            
+            for (int i = 0; i < n; i++) { 
+                for (int k = i; k < n; k++) { 
+                    int sum = 0; 
+                    for (int j = 0; j < i; j++) 
+                        sum += (lower[i][j] * upper[j][k]); 
+                    upper[i][k] = matriz[i][k] - sum; 
+                } 
+
+                for (int k = i; k < n; k++) { 
+                    if (i == k){ 
+                        lower[i][i] = 1;
+                    }else { 
+                        int sum = 0; 
+                        for (int j = 0; j < i; j++){ 
+                            sum += (lower[k][j] * upper[j][i]); 
+                        }
+                        lower[k][i] = (matriz[k][i] - sum) / upper[i][i]; 
+                    } 
+                }
+            }
+            System.out.println("Lower: \n" + new Matriz(lower));
+            System.out.println("Upper: \n" + new Matriz(upper));
+            double res = 0;
+            for (int i = 0; i < n; i++) {
+                res *= upper[i][i];
+            }
+            System.out.println("res: " + res);
+        }
+    }
+    
+    public void det(){
+        
     }
 }

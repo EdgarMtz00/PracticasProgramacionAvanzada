@@ -27,7 +27,7 @@ public class OperacionesMatrices {
     public void run (){
         Matriz m1;
         m1 = matrizInput("primera");
-        System.out.println( m1.inversa() );       
+        m1.luDecomposition();       
     }
     
     public Matriz matrizInput(String texto){
