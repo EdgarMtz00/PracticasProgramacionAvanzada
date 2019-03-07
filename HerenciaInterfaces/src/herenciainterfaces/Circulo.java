@@ -18,7 +18,7 @@ public class Circulo extends Coordenada{
     }
 
     public Circulo() {
-        
+        this.r = 0;
     }
 
     public double getR() {
@@ -28,4 +28,13 @@ public class Circulo extends Coordenada{
     public void setR(double r) {
         this.r = r;
     } 
+    
+    public double perimetro(){
+        return (r!=0)?2*Math.PI*r:null;
+    }
+    
+    public double area(){
+        return (r!=0)?Math.PI*r*r:null;
+    }
+    
 }
