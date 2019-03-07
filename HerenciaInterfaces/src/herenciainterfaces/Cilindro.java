@@ -25,11 +25,11 @@ public class Cilindro extends Circulo{
     
     @Override
     public double area(){
-        return (r != 0 || h != 0)?(super.perimetro() * h) + (2 * super.area()):null;
+        return (r != 0 || h != 0) ? (super.perimetro() * h) + (2 * super.area()) : null;
     }
     
     public double volumen(){
-        return (r != 0 || h != 0)?(super.area()* h):null;
+        return (r != 0 || h != 0) ? (super.area()* h) : null;
     }
     
 }
