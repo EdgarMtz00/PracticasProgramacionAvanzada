@@ -14,6 +14,8 @@ import java.util.Scanner;
  */
 public class OperacionesMatrices {
     Scanner scan = new Scanner(System.in);
+    Matriz m1, m2;
+    int menu = 1;
     /**
      * @param args the command line arguments
      */
@@ -25,9 +27,39 @@ public class OperacionesMatrices {
     }
     
     public void run (){
-        Matriz m1;
-        m1 = matrizInput("primera");
-        m1.luDecomposition();       
+        while(menu!=0){
+            System.out.println("1.-Suma\n2.-Resta\n3.-Multiplicacion\n4.-Traspuesta\n5.-Inversa\n6.-Determinante\n0.-Salir");       
+            menu = scan.nextInt();
+            switch(menu){
+                case 1:
+                    m1 = matrizInput("primera");
+                    m2 = matrizInput("segunda");
+                    System.out.println("\n res:\n" + m1.suma(m2));
+                    break;
+                case 2:
+                    m1 = matrizInput("primera");
+                    m2 = matrizInput("segunda");
+                    System.out.println("\n res:\n" + m1.resta(m2));
+                    break;
+                case 3:
+                    m1 = matrizInput("primera");
+                    m2 = matrizInput("segunda");
+                    System.out.println("\n res:\n" + m1.mult(m2));
+                    break;
+                case 4:
+                    m1 = matrizInput(null);
+                    System.out.println("\n res:\n" + m1.traspuesta());
+                    break;
+                case 5:
+                    m1 = matrizInput(null);
+                    System.out.println("\n res:\n" + m1.inversa());
+                    break;
+                case 6:
+                    m1 = matrizInput(null);
+                    System.out.println("\n res:\n" + m1.det(m1));
+                    break;
+            }
+        }
     }
     
     public Matriz matrizInput(String texto){
