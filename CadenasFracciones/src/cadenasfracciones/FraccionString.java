@@ -15,10 +15,10 @@ public class FraccionString {
     
     String[] stringNum;
     String[] stringDen;
+    String[] stringOp;
     int[] intNum;
     int[] intDen;
     int x;
-    
 
     public FraccionString() {
         stringNum = new String[]{"cero","un","dos","tres","cuatro","cinco","seis",
@@ -32,11 +32,41 @@ public class FraccionString {
         stringDen = new String[]{"enteros","medios","tercios","cuartos","quintos","sextos","septimos","octavos",
                                 "novenos","decimos","centesimos"};
         intDen = new int[]{1,2,3,4,5,6,7,8,9,10,100};
+        stringOp = new String[]{"mas", "menos", "por", "entre"};
+    }
+    
+    public String resolver(String operacion){
+        int index;
+        String[] strFrac;
+        Fraccion[] fracciones = new Fraccion[2];
+        
+        String op;
+        for(String operando: stringOp){
+            if(operacion.contains(operando)){
+                op = operando;
+                strFrac = operacion.split(op);
+                strFrac[0] = strFrac[0].substring(0,strFrac[0].length()-1);
+                for (int i = 0; i < fracciones.length; i++) {
+                    fracciones[i] = StringToFrac(strFrac[i]);
+                }
+                switch(op){
+                    case "mas":
+                        return FracToString(fracciones[0].suma(fracciones[1]));
+                    case "menos":
+                        return FracToString(fracciones[0].resta(fracciones[1]));
+                    case "por":
+                        return FracToString(fracciones[0].mult(fracciones[1]));
+                    case "entre":
+                        return FracToString(fracciones[0].div(fracciones[1]));
+                }
+            }
+        }
+        return "no se encuentra el operador";
     }
     
     public String FracToString(Fraccion x){
         String res=IntToString(x.num, false) + IntToString(x.den, true);
-        if(x.num>1){
+        if(x.num > 1 && !res.endsWith("s")){
             res += "s";
         }
         return res;
@@ -44,7 +74,45 @@ public class FraccionString {
     
     public Fraccion StringToFrac(String x){
         Fraccion res = new Fraccion();
+        int index = x.lastIndexOf(" ");
+        String num = x.substring(0, index);
+        String den = x.substring(index+1);
+        res.num = StringToInt(num);
+        res.den = StringToInt(den);
+        return res;
+    }
+    
+    public int StringToInt(String x){
+        int res=0;
         
+        for (int i = 0; i < stringDen.length; i++) {
+                if(x.equals(stringDen[i])){
+                    return intDen[i];
+                }
+        }
+        
+        
+        if(x.endsWith("avo") || x.endsWith("avos")){
+            String[] splited = x.split("y");
+            splited[splited.length-1] = (splited[splited.length-1].endsWith("avo"))?splited[splited.length-1].substring(0,splited[splited.length-1].length()-3):splited[splited.length-1].substring(0,splited[splited.length-1].length()-4);
+            //System.out.println(Arrays.toString(splited));
+            for (int i = 0; i < splited.length; i++) {
+                for (int j = 0; j < stringNum.length; j++) {
+                    if(splited[i].equals(stringNum[j])){
+                        res += intNum[j];
+                    }
+                }
+            }
+        }else{
+            String[] splited = x.split("\\s");
+            for (int i = 0; i < splited.length; i++) {
+                for (int j = 0; j < stringNum.length; j++) {
+                    if(splited[i].equals(stringNum[j])){
+                        res += intNum[j];
+                    }
+                }
+            }
+        }
         return res;
     }
     
@@ -67,7 +135,7 @@ public class FraccionString {
             digitos[maxDigit] = (digitos[maxDigit] == 0)? -1 : digitos[maxDigit];
             maxDigit--;
         }
-        
+        //System.out.println(Arrays.toString(digitos));
         for(int i = 0; i < 3; i++){
             for (int j = 0; j < intNum.length; j++) {
                 if(digitos[i] == intNum[j]){
@@ -95,6 +163,7 @@ public class FraccionString {
             }
             res = res.replaceAll("\\s", "");
         }
+        
         return res;
     }
 }

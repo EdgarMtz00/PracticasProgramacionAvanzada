@@ -5,6 +5,8 @@
  */
 package cadenasfracciones;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Agustin
@@ -17,7 +19,11 @@ public class CadenasFracciones {
     public static void main(String[] args) {
         // TODO code application logic here
         FraccionString fs = new FraccionString();
-        System.out.println(fs.FracToString(new Fraccion(1, 16)));
+        String operacion;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ingrese la operacion:");
+        operacion = scan.nextLine();
+        System.out.println(fs.resolver(operacion));
     }
     
 }

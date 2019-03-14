@@ -49,4 +49,9 @@ public class Fraccion {
         int rDen = den * f1.num;
         return new Fraccion(rNum, rDen);
     }
+    
+    @Override
+    public String toString(){
+        return num + " / " + den;
+    }
 }
