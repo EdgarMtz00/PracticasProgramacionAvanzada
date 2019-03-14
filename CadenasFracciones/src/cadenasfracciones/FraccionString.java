@@ -5,6 +5,7 @@
  */
 package cadenasfracciones;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -12,65 +13,59 @@ import java.util.HashMap;
  * @author Agustin
  */
 public class FraccionString {
-    HashMap<String, Integer> numeros;
     
-    public FraccionString(){
-        numeros.put("cero", 0);
-        numeros.put("uno", 1);
-        numeros.put("dos", 2);
-        numeros.put("tres", 3);
-        numeros.put("cuatro", 4);
-        numeros.put("cinco", 5);
-        numeros.put("seis", 6);
-        numeros.put("siete", 7);
-        numeros.put("ocho", 8);
-        numeros.put("nueve", 9);
-        numeros.put("diez", 10);
+    String[] partes;
+    String[] stringNum;
+    String[] numeros_sD;
+    int[] intNum;
+    int[] numeros_iD;
+    int x;
+    
+
+    public FraccionString() {
+        stringNum = new String[]{"cero","un","dos","tres","cuatro","cinco","seis",
+                                "siete","ocho","nueve","diez","once","doce",
+                                "trece","catorce","quince","dieciseis","diecisiete","dieciocho","diecinueve","veinte",
+                                "veintiun","veintidos","veintitres","veinticuatro","veinticinco","veintiseis","veintisiete",
+                                "veintiocho","veintinueve","treinta","cuarenta","cincuenta","sesenta","setenta",
+                                "ochenta","noventa","cien"};
+        intNum = new int[]{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,
+                                22,23,24,25,26,27,28,29,30,40,50,60,70,80,90,100};
+        numeros_sD = new String[]{"enteros","medios","tercios","cuartos","quintos","sextos","septimos","octavos",
+                                "novenos","decimos","centesimos"};
+        numeros_iD = new int[]{1,2,3,4,5,6,7,8,9,10,100};
+    }
+    
+    public String FracToString(Fraccion x){
+        String res="";
         
-        // 11-20
-        numeros.put("once", 11);
-        numeros.put("doce", 12);
-        numeros.put("trece", 13);
-        numeros.put("catorce", 14);
-        numeros.put("quince", 15);
-        numeros.put("dieci", 10);
-        numeros.put("veinte", 20);
+        return res;
+    }
+    
+    public Fraccion StringToFrac(String x){
+        Fraccion res;
         
-        numeros.put("veinti", 20);
+        return res;
+    }
+    
+    public String IntToString(int x, boolean den){
+        double[] digitos = new double[3];
+        int i=0;
+        String res = "";
         
-        // 30-100
-        numeros.put("treinta", 30);
-        numeros.put("cuarenta", 40);
-        numeros.put("cincuenta", 50);
-        numeros.put("sesenta", 60);
-        numeros.put("setenta", 70);
-        numeros.put("ochenta", 80);
-        numeros.put("noventa", 90);
+        while(x > 0){
+            digitos[i] = (x % 10)*(100/Math.pow(10,i));
+            x = x/10;
+            i++;
+        }
+        System.out.println(Arrays.toString(digitos));
         
-        numeros.put("quinientos", 500);
-        numeros.put("milesimos", 1000);
-        
-        // multiplicativos
-        numeros.put("cientos", 100);
-        numeros.put("mil", 1000);
-        numeros.put("centesimo", 100);
-        numeros.put("milesimo", 1000);
-        
-        // 100
-        numeros.put("ciento", 100);
-        numeros.put("cien", 100);
-        
-        
-        // denominadores
-        numeros.put("entero", 1);
-        numeros.put("medio", 2);
-        numeros.put("tercio", 3);
-        numeros.put("cuarto", 4);
-        numeros.put("quinto", 5);
-        numeros.put("sexto", 6);
-        numeros.put("septimo", 7);
-        numeros.put("octavo", 8);
-        numeros.put("noveno", 9);
-        numeros.put("decimo", 10);    
+        if(!den){
+            for(i = 0; i < digitos.length; i++){
+                for (int j = 0; j < stringNum.length; j++) {
+                    
+                }
+            }
+        }
     }
 }
