@@ -16,6 +16,8 @@ public class CadenasFracciones {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        FraccionString fs = new FraccionString();
+        System.out.println(fs.FracToString(new Fraccion(1, 16)));
     }
     
 }

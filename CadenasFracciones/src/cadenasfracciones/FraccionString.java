@@ -6,7 +6,6 @@
 package cadenasfracciones;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 /**
  *
@@ -14,11 +13,10 @@ import java.util.HashMap;
  */
 public class FraccionString {
     
-    String[] partes;
     String[] stringNum;
-    String[] numeros_sD;
+    String[] stringDen;
     int[] intNum;
-    int[] numeros_iD;
+    int[] intDen;
     int x;
     
 
@@ -31,41 +29,72 @@ public class FraccionString {
                                 "ochenta","noventa","cien"};
         intNum = new int[]{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,
                                 22,23,24,25,26,27,28,29,30,40,50,60,70,80,90,100};
-        numeros_sD = new String[]{"enteros","medios","tercios","cuartos","quintos","sextos","septimos","octavos",
+        stringDen = new String[]{"enteros","medios","tercios","cuartos","quintos","sextos","septimos","octavos",
                                 "novenos","decimos","centesimos"};
-        numeros_iD = new int[]{1,2,3,4,5,6,7,8,9,10,100};
+        intDen = new int[]{1,2,3,4,5,6,7,8,9,10,100};
     }
     
     public String FracToString(Fraccion x){
-        String res="";
-        
+        String res=IntToString(x.num, false) + IntToString(x.den, true);
+        if(x.num>1){
+            res += "s";
+        }
         return res;
     }
     
     public Fraccion StringToFrac(String x){
-        Fraccion res;
+        Fraccion res = new Fraccion();
         
         return res;
     }
     
     public String IntToString(int x, boolean den){
-        double[] digitos = new double[3];
-        int i=0;
+        double[] digitos = {-1, -1, -1};
+        int maxDigit = 2, num = x;
         String res = "";
         
-        while(x > 0){
-            digitos[i] = (x % 10)*(100/Math.pow(10,i));
-            x = x/10;
-            i++;
+        if(x == 0){
+            return "cero";
         }
-        System.out.println(Arrays.toString(digitos));
         
-        if(!den){
-            for(i = 0; i < digitos.length; i++){
-                for (int j = 0; j < stringNum.length; j++) {
-                    
+        while(x > 0){
+            digitos[maxDigit] = (x % 10)*(100/Math.pow(10,maxDigit));
+            x = x/10;
+            if(digitos[maxDigit] == 20 || digitos[maxDigit] == 10){
+                digitos[maxDigit] += digitos[maxDigit+1];
+                digitos[maxDigit+1] = -1;
+            }       
+            digitos[maxDigit] = (digitos[maxDigit] == 0)? -1 : digitos[maxDigit];
+            maxDigit--;
+        }
+        
+        for(int i = 0; i < 3; i++){
+            for (int j = 0; j < intNum.length; j++) {
+                if(digitos[i] == intNum[j]){
+                    res += stringNum[j];
+                    if(digitos[i] == 100){
+                        res += "to";
+                    }else if( digitos[i] >= 30 && digitos[i+1] != 0 ){
+                        res += " y ";
+                    }
+                    res += " ";
                 }
             }
         }
+        
+        if(den){
+            res = res.substring(0, res.length()-1);
+            if(res.endsWith("a")){
+                res = res.substring(0, res.length()-1);
+            }
+            res += "avo";
+            for (int i = 0; i < intDen.length; i++) {
+                if(num == intDen[i]){
+                    res = stringDen[i];
+                }
+            }
+            res = res.replaceAll("\\s", "");
+        }
+        return res;
     }
 }
