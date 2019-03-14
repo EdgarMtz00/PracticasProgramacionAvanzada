@@ -71,7 +71,6 @@ public class FraccionString {
         numeros.put("septimo", 7);
         numeros.put("octavo", 8);
         numeros.put("noveno", 9);
-        numeros.put("decimo", 10);
-        
+        numeros.put("decimo", 10);    
     }
 }
