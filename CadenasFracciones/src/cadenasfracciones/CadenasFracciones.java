@@ -24,6 +24,8 @@ public class CadenasFracciones {
         System.out.println("Ingrese la operacion:");
         operacion = scan.nextLine();
         System.out.println(fs.resolver(operacion));
+        //System.out.println(fs.FracToString(new Fraccion(1, 0)));
+        
     }
     
 }

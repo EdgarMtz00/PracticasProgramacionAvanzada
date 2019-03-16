@@ -48,6 +48,9 @@ public class FraccionString {
                 strFrac[0] = strFrac[0].substring(0,strFrac[0].length()-1);
                 for (int i = 0; i < fracciones.length; i++) {
                     fracciones[i] = StringToFrac(strFrac[i]);
+                    if(fracciones[i].divCero){
+                        return "division entre cero";
+                    }
                 }
                 switch(op){
                     case "mas":
@@ -73,13 +76,10 @@ public class FraccionString {
     }
     
     public Fraccion StringToFrac(String x){
-        Fraccion res = new Fraccion();
         int index = x.lastIndexOf(" ");
         String num = x.substring(0, index);
         String den = x.substring(index+1);
-        res.num = StringToInt(num);
-        res.den = StringToInt(den);
-        return res;
+        return new Fraccion(StringToInt(num), StringToInt(den));
     }
     
     public int StringToInt(String x){
@@ -122,10 +122,10 @@ public class FraccionString {
         String res = "";
         
         if(x == 0){
-            return "cero";
+            return "cero ";
         }
         
-        while(x > 0){
+        while(x > 0 && maxDigit >= 0){
             digitos[maxDigit] = (x % 10)*(100/Math.pow(10,maxDigit));
             x = x/10;
             if(digitos[maxDigit] == 20 || digitos[maxDigit] == 10){

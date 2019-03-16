@@ -11,6 +11,7 @@ package cadenasfracciones;
  */
 public class Fraccion {
     int num, den;
+    boolean divCero = false;
     
     public Fraccion(){
         num = 1;
@@ -22,19 +23,20 @@ public class Fraccion {
             this.num = num;
             this.den = den;
         }else{
-            System.out.println("");
+            System.out.println("error");
+            divCero = true;
         }
     }
     
     public Fraccion suma(Fraccion f1){
-        int rNum = num * f1.den + f1.num * den;
-        int rDen = den * f1.den;
+        int rNum = (den != f1.den)?num * f1.den + f1.num * den : num + f1.num;
+        int rDen = (den != f1.den)?den * f1.den : den;
         return new Fraccion(rNum, rDen);
     }
     
     public Fraccion resta(Fraccion f1){
-        int rNum = num * f1.den - f1.num * den;
-        int rDen = den * f1.den;
+        int rNum = (den != f1.den)?num * f1.den - f1.num * den : num - f1.num;
+        int rDen = (den != f1.den)?den * f1.den : den;
         return new Fraccion(rNum, rDen);
     }
     
