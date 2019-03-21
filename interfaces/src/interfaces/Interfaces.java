@@ -16,6 +16,24 @@ public class Interfaces {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Figura x;
+        x = new Circulo(10);
+        System.out.println("area del " + x.quienEres() + ": " + x.area());
+        x = new Cuadrado(5);
+        System.out.println("area del " + x.quienEres() + ": " + x.area());
+        x = new Cilindro(10,20);
+        System.out.println("area del " + x.quienEres() + ": " + x.area());
+        x = new Figura(){
+            @Override
+            public double area() {
+                return 0; //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public String quienEres() {
+                return "Nadie";
+            }
+        };
+        System.out.println("area del " + x.quienEres() + ": " + x.area());
     }
-    
 }

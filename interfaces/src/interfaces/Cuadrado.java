@@ -9,6 +9,29 @@ package interfaces;
  *
  * @author Agustin
  */
-public class Cuadrado {
+public class Cuadrado implements Figura{
+    double lado;
+
+    public Cuadrado(double lado) {
+        this.lado = lado;
+    }
+    
+    public double getLado() {
+        return lado;
+    }
+
+    public void setLado(double lado) {
+        this.lado = lado;
+    }
+    
+    @Override
+    public double area() {
+        return lado * lado;
+    }
+
+    @Override
+    public String quienEres() {
+        return "Cuadrado";
+    }
     
 }

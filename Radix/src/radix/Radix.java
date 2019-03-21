@@ -3,13 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package interfaces;
+package radix;
 
 /**
  *
  * @author Agustin
  */
-public interface Figura {
-    double area();
-    String quienEres();
+public class Radix {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
+    
 }
