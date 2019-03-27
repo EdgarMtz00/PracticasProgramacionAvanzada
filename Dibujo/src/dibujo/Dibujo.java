@@ -16,6 +16,8 @@ public class Dibujo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Canvas canvas = new Canvas();
+        canvas.setVisible(true);
     }
     
 }
