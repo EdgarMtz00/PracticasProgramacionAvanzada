@@ -24,14 +24,13 @@ public class data {
    
    public void radixSort(){
        Integer max = coleccion.get(0), exponent = 1; 
-       for (int data : coleccion) 
-       {
+       for (int data : coleccion){
            max = (data > max)?data:max;
        }
        do{
            exponent*=10;
            ArrayList<Integer> temp = new ArrayList<>();
-           for (int i = 0; i <=9; i++) {
+           for (int i = 0; i <=9; i++){
                for (int data : coleccion){
                    if((data % exponent - (data %(exponent/10)))/(exponent/10) ==i ){
                        temp.add(data);
