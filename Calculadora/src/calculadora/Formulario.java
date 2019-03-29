@@ -7,6 +7,7 @@ package calculadora;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -18,13 +19,14 @@ import javax.swing.JTextField;
  * @author agust
  */
 public class Formulario extends JFrame implements ActionListener{
-    JButton[] botonesNum = new JButton[11];
+    JButton[] botonesNum = new JButton[12];
     JButton[] botonesOp  = new JButton[5];
-    String[] numeros = {"0", ".", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+    String[] numeros = {"0", "i", ".", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
     String[] operaciones = {"=", "+", "-", "*", "/"};
     JTextField pantalla = new JTextField();
-    String operacion;
+    String operacion = "";
     Color negro, gris, grisOsc;
+    
     public Formulario(){
         colores();
         config();
@@ -33,8 +35,9 @@ public class Formulario extends JFrame implements ActionListener{
     }
     
     private void config(){
-        this.setSize(500,500);
+        this.setSize(500,700);
         this.setMinimumSize(new Dimension(500, 750));
+        this.setMaximumSize(new Dimension(500, 750));
         this.getContentPane().setBackground(grisOsc);
         this.setTitle("Calculadora");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -51,7 +54,9 @@ public class Formulario extends JFrame implements ActionListener{
         pantalla.setBackground(negro);
         pantalla.setForeground(Color.WHITE);
         pantalla.setEditable(false);
-        pantalla.setBounds(0, 0, 500, 200);
+        pantalla.setBounds(20, 0, 450, 200);
+        Font font = new Font("SansSerif", Font.BOLD, 35);
+        pantalla.setFont(font);
         this.add(pantalla);
     }
     
@@ -64,11 +69,12 @@ public class Formulario extends JFrame implements ActionListener{
             this.add(botonesNum[i]);
         }
         
-        botonesNum[0].setBounds(55, 610, 190, 90);
-        botonesNum[1].setBounds(255, 610, 90, 90);
-        
-        for (int i = 2; i < botonesNum.length; i++) {
-            botonesNum[i].setBounds(55 + (90 * (i % 3)), 300 + (90 * (i % 3)), 90, 90);
+        int iterador = 0;
+        for (int y = 0; y < 4; y++) {
+            for (int x = 0; x < 3; x++) {
+                botonesNum[iterador].setBounds(55 +(90 * x), 510 - (90 * y), 90, 90);
+                iterador++;
+            }
         }
         
         botonesOp[0] = new JButton(operaciones[0]);
@@ -91,6 +97,7 @@ public class Formulario extends JFrame implements ActionListener{
         Object o = e.getSource();
         JButton boton = (JButton)o;
         operacion += boton.getText();
+        pantalla.setText(operacion);
     }
     
 }
