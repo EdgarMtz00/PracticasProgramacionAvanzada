@@ -22,7 +22,7 @@ public class Formulario extends JFrame implements ActionListener{
     JButton[] botonesNum = new JButton[12];
     JButton[] botonesOp  = new JButton[5];
     String[] numeros = {"0", "i", ".", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
-    String[] operaciones = {"=", "+", "-", "*", "/"};
+    String[] operaciones = {" = ", " + ", " - ", " * ", " / "};
     JTextField pantalla = new JTextField();
     String operacion = "";
     Color negro, gris, grisOsc;
