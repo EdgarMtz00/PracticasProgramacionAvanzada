@@ -25,10 +25,11 @@ public class Formulario extends JFrame implements ActionListener{
     String[] operaciones = {" = ", " + ", " - ", " * ", " / "};
     JTextField pantalla = new JTextField();
     String operacion = "";
-    Color negro, gris, grisOsc;
+    Color negro = new Color(43, 39, 39);
+    Color gris = new Color(103, 101, 101);
+    Color grisOsc = new Color(71, 68, 68);
     
     public Formulario(){
-        colores();
         config();
         configBotones();
         configPantalla();
@@ -42,12 +43,6 @@ public class Formulario extends JFrame implements ActionListener{
         this.setTitle("Calculadora");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
-    }
-    
-    private void colores(){
-        negro = new Color(43, 39, 39);
-        gris = new Color(103, 101, 101);
-        grisOsc = new Color(71, 68, 68);
     }
     
     private void configPantalla(){
