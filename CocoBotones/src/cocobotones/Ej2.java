@@ -13,14 +13,13 @@ import javax.swing.JFrame;
  *
  * @author Agustin
  */
-public class forms extends JFrame{
-    JButton cosa1, cosa2, cosa3, cosa4;
+public class Ej2 extends JFrame{
+    JButton[] cosas = new JButton[10];
     GroupLayout orden = new GroupLayout(this.getContentPane());
-    public forms(){
-        cosa1 = new JButton("cosa1");
-        cosa2 = new JButton("cosa2");
-        cosa3 = new JButton("cosa3");
-        cosa4 = new JButton("cosa4");
+    public Ej2(){
+        for(JButton cosa : cosas){
+            cosa = new JButton("cosa");
+        }
         this.setTitle("CocoVentana");
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -30,12 +29,12 @@ public class forms extends JFrame{
            orden.createSequentialGroup()
                 .addGroup(orden.createParallelGroup()
                     .addGroup(orden.createSequentialGroup()
-                            .addComponent(cosa1, 300, 300, 300)
-                            .addComponent(cosa2, 150, 150, 150)
+                            .addComponent(cosas[1], 300, 300, 300)
+                            .addComponent(cosas[2], 150, 150, 150)
                     )
                     .addGroup(orden.createSequentialGroup()
-                        .addComponent(cosa3, 150, 150, 150)
-                        .addComponent(cosa4, 300, 300, 300)
+                        .addComponent(cosas[3], 150, 150, 150)
+                        .addComponent(cosas[4], 300, 300, 300)
                     )
                 )
         );
@@ -43,12 +42,12 @@ public class forms extends JFrame{
         orden.setVerticalGroup(
             orden.createSequentialGroup()
                 .addGroup(orden.createParallelGroup()
-                        .addComponent(cosa1)
-                        .addComponent(cosa2)
+                        .addComponent(cosas[1])
+                        .addComponent(cosas[2])
                 )
                 .addGroup(orden.createParallelGroup()
-                    .addComponent(cosa3)
-                    .addComponent(cosa4)
+                    .addComponent(cosas[3])
+                    .addComponent(cosas[4])
                 )
         );
         
@@ -57,4 +56,5 @@ public class forms extends JFrame{
         this.setLayout(orden);
         this.pack();
     }
+    
 }
