@@ -5,9 +5,12 @@
  */
 package painterpreter;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import javax.swing.Timer;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -27,7 +30,9 @@ public class Interpreter {
     HashMap<String, Integer> cicles;
     Dummy dummy = new Dummy();
     Form form;
-    
+
+
+
     public Interpreter(String code, Form form){
         this.form = form;
         form.setDummy(dummy);
@@ -99,84 +104,82 @@ public class Interpreter {
         if(compile()){
             dummy = new Dummy();
             form.setDummy(dummy);
-                for(Integer i = 0; i < commands.length; i++){
-                    String[] terms = commands[i].split(" ");
-                    switch(commands[i].split(" ")[0]){
-                        case "for":
-                            String n = commands[i].substring(4, commands[i].indexOf(":"));
-                            Integer indexf = i;
-                            if(vars.containsKey(n)){
-                                cicles.put(indexf.toString(), (Integer)vars.get(n));
-                            }else{
-                                cicles.put(indexf.toString(), Integer.parseInt(n));
-                            }
-                            break;
-                        case "if":
-                            String c = commands[i].substring(3, commands[i].indexOf(":"));
-                            System.out.println(condition(c));
-                            if(condition(c) == 0){
+            form.start();
+            for(int i = 0; i < commands.length; i++){
+                String[] terms = commands[i].split(" ");
+                switch(commands[i].split(" ")[0]){
+                    case "for":
+                        String n = commands[i].substring(4, commands[i].indexOf(":"));
+                        Integer indexf = i;
+                        if(vars.containsKey(n)){
+                            cicles.put(indexf.toString(), (Integer)vars.get(n));
+                        }else{
+                            cicles.put(indexf.toString(), Integer.parseInt(n));
+                        }
+                        break;
+                    case "if":
+                        String c = commands[i].substring(3, commands[i].indexOf(":"));
+                        System.out.println(condition(c));
+                        if(condition(c) == 0){
+                            System.out.println(i);
+                            int index = indexOfEndif(i);
+                            i = index;
+                            System.out.println(i);
+                        }
+                        break;
+                    case "up":
+                        dummy.move(Dummy.VERTICAL, Dummy.DECREASE);
+                        System.out.println("up");
+                        break;
+                    case "down":
+                        dummy.move(Dummy.VERTICAL, Dummy.INCREASE);
+                        form.repaint();
+                        System.out.println("down");
+                        break;
+                    case "left":
+                        dummy.move(Dummy.HORIZONTAL, Dummy.DECREASE);
+                        System.out.println("left");
+                        break;
+                    case "right":
+                        dummy.move(Dummy.HORIZONTAL, Dummy.INCREASE);
+                        break;
+                    case "moveLeftArm":
+                        dummy.moveLeftArm();
+                        break;
+                    case "moveRightArm":
+                        dummy.moveRightArm();
+                        break;
+                    case "moveLeftLeg":
+                        dummy.moveLeftLeg();
+                        break;
+                    case "moveRightLeg":
+                        dummy.moveRightLeg();
+                        break;
+                    case "endif":
+                        break;
+                    case "endfor":
+                        for(String key : cicles.keySet()){
+                            if(cicles.get(key) != 0){
+                                i = Integer.parseInt(key);
                                 System.out.println(i);
-                                int index = indexOfEndif(i);
-                                i = index;
-                                System.out.println(i);
+                                cicles.put(key, cicles.get(key) - 1);
                             }
-                            break;
-                        case "up":
-                            dummy.move(Dummy.VERTICAL, Dummy.DECREASE);
-                            form.repaint();
-                            System.out.println("up");
-                            break;
-                        case "down":
-                            dummy.move(Dummy.VERTICAL, Dummy.INCREASE);
-                            System.out.println("down");
-                            form.repaint();
-                            break;
-                        case "left":
-                            dummy.move(Dummy.HORIZONTAL, Dummy.DECREASE);
-                            form.repaint();
-                            System.out.println("left");
-                            break;
-                        case "right":
-                            dummy.move(Dummy.HORIZONTAL, Dummy.INCREASE);
-                            form.repaint();
-                            break;
-                        case "moveLeftArm":
-                            dummy.moveLeftArm();
-                            form.repaint();
-                            break;
-                        case "moveRightArm":
-                            dummy.moveRightArm();
-                            form.repaint();
-                            break;
-                        case "moveLeftLeg":
-                            dummy.moveLeftLeg();
-                            form.repaint();
-                            break;
-                        case "moveRightLeg":
-                            dummy.moveRightLeg();
-                            form.repaint();
-                            break;
-                        case "endif":
-                            break;
-                        case "endfor":
-                            for(String key : cicles.keySet()){
-                                if(cicles.get(key) != 0){
-                                    i = Integer.parseInt(key);
-                                    System.out.println(i);
-                                    cicles.put(key, cicles.get(key) - 1);
-                                }
-                            }
-                            
-                        default:
-                            break;
-                    } 
+                        }
+                    default:
+                        break;
                 }
+
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            form.stop();
         }
     }
-    
-    private void delay() throws InterruptedException{
-        Thread.sleep(500);
-    }
+
+
     
     private int indexOfEndif(int indexIf){
         int ifCount = 0;

@@ -24,10 +24,14 @@ public class Formulario extends JFrame implements ActionListener{
     String[] numeros = {"0", "i", ".", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
     String[] operaciones = {" = ", " + ", " - ", " * ", " / "};
     JTextField pantalla = new JTextField();
+
     String operacion = "";
+
     Color negro = new Color(43, 39, 39);
     Color gris = new Color(103, 101, 101);
     Color grisOsc = new Color(71, 68, 68);
+
+    Font font = new Font("SansSerif", Font.BOLD, 35);
     
     public Formulario(){
         config();
@@ -50,7 +54,6 @@ public class Formulario extends JFrame implements ActionListener{
         pantalla.setForeground(Color.WHITE);
         pantalla.setEditable(false);
         pantalla.setBounds(20, 0, 450, 200);
-        Font font = new Font("SansSerif", Font.BOLD, 35);
         pantalla.setFont(font);
         this.add(pantalla);
     }
@@ -61,6 +64,7 @@ public class Formulario extends JFrame implements ActionListener{
             botonesNum[i].addActionListener(this);
             botonesNum[i].setBackground(gris);
             botonesNum[i].setForeground(Color.WHITE);
+            botonesNum[i].setFont(font);
             this.add(botonesNum[i]);
         }
         
@@ -73,7 +77,11 @@ public class Formulario extends JFrame implements ActionListener{
         }
         
         botonesOp[0] = new JButton(operaciones[0]);
+        botonesOp[0].setBounds(55, 600, 360, 90);
         this.add(botonesOp[0]);
+        botonesOp[0].setBackground(gris);
+        botonesOp[0].setForeground(Color.WHITE);
+        botonesOp[0].setFont(font);
         botonesOp[0].addActionListener((ActionEvent e) -> {
             //code here
         });
@@ -83,6 +91,8 @@ public class Formulario extends JFrame implements ActionListener{
             botonesOp[i].addActionListener(this);
             botonesOp[i].setBackground(gris);
             botonesOp[i].setForeground(Color.WHITE);
+            botonesOp[i].setBounds(325, 600 - (90 * i), 90, 90);
+            botonesOp[i].setFont(font);
             this.add(botonesOp[i]);
         }
     }

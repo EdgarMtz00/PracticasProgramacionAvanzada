@@ -18,8 +18,6 @@ public class Calculadora {
         // TODO code application logic here
         Formulario formulario = new Formulario();
         formulario.setVisible(true);
-        Operacion operacion = new Operacion();
-        operacion.parseOperacion("35 + 23 - 1");
     }
     
 }
