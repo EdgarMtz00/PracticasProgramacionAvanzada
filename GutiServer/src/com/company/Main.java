@@ -12,21 +12,24 @@ public class Main {
     public static void main(String[] args) {
         try {
             // TODO code application logic here
-            ServerSocket server = new  ServerSocket(5000);
+            ServerSocket gutiServer = new  ServerSocket(5000);
+            String msgEnviado = "eyuyel esta bien";
             while(true){
-                Socket puto1 = server.accept();
-                String Smsg = "eyuyel";
-                byte[] msg = new byte[puto1.getInputStream().available()];
-                puto1.getInputStream().read(msg);
-                System.out.println(puto1.getInetAddress() + ": " + new String(msg, StandardCharsets.UTF_8));
-                puto1.close();
-                Socket puto2 = server.accept();
-                puto2.getOutputStream().write(msg);
-                System.out.println(puto2.getInetAddress());
-                puto2.close();
+                Socket gutiSocket = gutiServer.accept();
+                byte[] msgRecibido = new byte[500];
+                gutiSocket.getOutputStream().write(msgEnviado.getBytes(StandardCharsets.UTF_8));
+                System.out.println("mensaje enviado");
+                Thread.sleep(1000);
+                gutiSocket.getInputStream().read(msgRecibido);
+                msgEnviado = new String(msgRecibido, StandardCharsets.UTF_8);
+                System.out.println("'" + gutiSocket.getInetAddress() + "' envia: " + msgEnviado);
+                Thread.sleep(1000);
+                gutiSocket.close();
             }
         } catch (IOException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }

@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c6bf100-def1-4597-be69-d1da9843ca6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/NumComplejo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculadora/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/out/production/Calculadora/calculadora/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculadora/out/production/Calculadora/calculadora/Calculadora.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/out/production/Calculadora/calculadora/Formulario.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculadora/out/production/Calculadora/calculadora/Formulario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/out/production/Calculadora/calculadora/Operacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/src/calculadora/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/Calculadora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/src/calculadora/Formulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/Formulario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/src/calculadora/Operacion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/painterpreter/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/painterpreter/Form.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/painterpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/painterpreter/Interpreter.java" afterDir="false" />
-    </list>
+    <list default="true" id="5c6bf100-def1-4597-be69-d1da9843ca6e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,16 +155,15 @@
       <option name="presentableId" value="Default" />
       <updated>1554299030852</updated>
       <workItem from="1554299034144" duration="1210000" />
-      <workItem from="1554351601829" duration="3076000" />
+      <workItem from="1554351601829" duration="3296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4286000" />
+    <option name="totallyTimeSpent" value="4506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24630873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -189,7 +175,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

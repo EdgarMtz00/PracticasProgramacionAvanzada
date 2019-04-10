@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c6714b-a5be-4cb2-a462-cd0a647762c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/calculadora/NumComplejo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Calculadora.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Formulario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Formulario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Operacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculadora/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculadora/Calculadora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculadora/Formulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculadora/Formulario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculadora/Operacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/NumComplejo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculadora/NumComplejo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GutiServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GutiServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GutiServer/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GutiServer/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Form.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Interpreter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,21 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplejo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-              <folding>
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -58,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/NumComplex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="323">
               <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
               <folding>
                 <element signature="e#0#834#0" expanded="true" />
@@ -67,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculadora/Formulario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
+            <state relative-caret-position="318">
               <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
             </state>
           </provider>
@@ -92,16 +75,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/calculadora/Calculadora.java" />
-        <option value="$PROJECT_DIR$/src/calculadora/NumComplejo.java" />
         <option value="$PROJECT_DIR$/src/calculadora/Formulario.java" />
+        <option value="$PROJECT_DIR$/src/calculadora/NumComplejo.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-10" />
     <option name="y" value="20" />
-    <option name="width" value="783" />
-    <option name="height" value="689" />
+    <option name="width" value="785" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -177,27 +160,28 @@
       <updated>1554347139997</updated>
       <workItem from="1554347141611" duration="641000" />
       <workItem from="1554347810868" duration="3418000" />
+      <workItem from="1554423962636" duration="19000" />
+      <workItem from="1554424165621" duration="2197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4059000" />
+    <option name="totallyTimeSpent" value="6275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -207,6 +191,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -224,16 +209,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/calculadora/Operacion.java" />
     <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplex.java" />
-    <entry file="file://$USER_HOME$/Desktop/NumComplex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#834#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calculadora/Calculadora.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -241,27 +216,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplejo.java">
+    <entry file="file://$USER_HOME$/Desktop/NumComplex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        <state relative-caret-position="323">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
           <folding>
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#0#834#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calculadora/Formulario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
+        <state relative-caret-position="318">
           <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplejo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
