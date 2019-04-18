@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98b66531-879b-4ebb-9d19-d77bbf9e7adf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../GutiCliente/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GutiCliente/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculadora/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Calculadora/src/calculadora/NumComplejo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/NumComplejo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="98b66531-879b-4ebb-9d19-d77bbf9e7adf" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1554424267300</updated>
       <workItem from="1554424274589" duration="1253000" />
-      <workItem from="1554852859982" duration="4836000" />
+      <workItem from="1554852859982" duration="5323000" />
     </task>
     <task id="LOCAL-00001" summary="Trabajo en clase de conexion a varios sockets">
       <created>1554424628279</created>
@@ -154,7 +146,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6089000" />
+    <option name="totallyTimeSpent" value="6576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />

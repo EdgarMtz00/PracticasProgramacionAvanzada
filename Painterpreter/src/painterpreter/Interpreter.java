@@ -20,10 +20,12 @@ import java.util.logging.Logger;
  * @author Agustin
  */
 public class Interpreter {
+    private final String[] operadores = new String[]{"+", "-", "*", "/"};
+    private final String[] comparadores = new String[]{"<", ">", "=="};
     String codigo;
     HashMap vars;
     String outputMsg;
-    String [] commands;
+    String[] commands;
     String[] functions = {"up", "down", "left", "right", "if", "endif",
         "for", "endfor", "dab", "squat", "moveLeftArm", "moveRightArm",
         "moveLeftLeg", "moveRightLeg"};
@@ -199,27 +201,51 @@ public class Interpreter {
     }
     
     private int condition(String condition){
-        String[] terms = condition.split(" ");
-        int t1, t2;
-        if(terms.length == 3){
-            if(terms[1].matches("[<>=]") && isIntOrVar(terms[0]) && isIntOrVar(terms[2])){
-                t1 = (vars.containsKey(terms[0])?
-                        (int)vars.get(terms[0]) : Integer.parseInt(terms[0]));
-                t2 = Integer.parseInt(terms[2]);
-                switch(terms[1]){
-                    case "<":
-                        return (t1 < t2)? 1 : 0;
-                    case ">":
-                        return (t1 > t2)? 1 : 0;
-                    case "=":
-                        return (t1 == t2)? 1 : 0;
+        for(String comparador : comparadores){
+            if (condition.contains(comparador)) {
+                int t1, t2;
+                String[] terms = condition.split(comparador);
+                if(isIntOrVar(terms[0]) && isIntOrVar(terms[2])) {
+                    t1 = (vars.containsKey(terms[0]) ?
+                            (int) vars.get(terms[0]) : Integer.parseInt(terms[0]));
+                    t2 = Integer.parseInt(terms[2]);
+                    switch (terms[1]) {
+                        case "<":
+                            return (t1 < t2) ? 1 : 0;
+                        case ">":
+                            return (t1 > t2) ? 1 : 0;
+                        case "=":
+                            return (t1 == t2) ? 1 : 0;
+                    }
                 }
             }
         }
         return 2;
     }
-    
+    //TODO: Remplazar operacion y aceptar suma
     private boolean isIntOrVar(String x){
+        for(String operador : operadores){
+            if(x.contains(operador)){
+                String op = operador;
+                String[] operacion = x.split(op);
+                operacion[0] = operacion[0].trim();
+                operacion[1] = operacion[1].trim();
+                switch (operador){
+                    case "+":
+                        x = String.valueOf((Integer.parseInt(operacion[0]) + Integer.parseInt(operacion[1])));
+                        break;
+                    case "-":
+                        x = String.valueOf((Integer.parseInt(operacion[0]) - Integer.parseInt(operacion[1])));
+                        break;
+                    case "*":
+                        x = String.valueOf((Integer.parseInt(operacion[0]) * Integer.parseInt(operacion[1])));
+                        break;
+                    case "/":
+                        x = String.valueOf((Integer.parseInt(operacion[0]) / Integer.parseInt(operacion[1])));
+                        break;
+                }
+            }
+        }
         if(x.matches("-?\\d+(\\.\\d+)?")){
             return true;
         }else{
