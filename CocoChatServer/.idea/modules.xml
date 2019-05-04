@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CocoChat.iml" filepath="$PROJECT_DIR$/CocoChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CocoChatServer.iml" filepath="$PROJECT_DIR$/CocoChatServer.iml" />
     </modules>
   </component>
 </project>
