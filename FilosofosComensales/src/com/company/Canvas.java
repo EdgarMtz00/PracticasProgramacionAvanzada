@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Canvas extends JFrame {
 
-    public Graphics g;
+    private Graphics g;
     private ArrayList<Filosofo> filosofos;
     private  ArrayList<Palillo> palillos;
 
@@ -27,11 +27,10 @@ public class Canvas extends JFrame {
     public void paint(Graphics g) {
         super.paint(g);
         colocar(g);
-        System.out.println("lol");
         this.g = g;
     }
 
-    public void colocar(Graphics g){
+    private void colocar(Graphics g){
         filosofos.get(0).paint(g, 225, 150);
         palillos.get(0).paint(g, 167, 175);
         filosofos.get(1).paint(g, 125, 250 );

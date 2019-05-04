@@ -2,11 +2,15 @@ package views;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
 
 public class ChatFrame extends JFrame {
     MsgPanel pChat;
     JTextField tMsg;
-    JTextArea tCurrentChat;
+    JLabel lCurrentChat;
     JButton bSend;
     JTabbedPane tpControl;
 
@@ -19,39 +23,63 @@ public class ChatFrame extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         componentConfig();
         glConfig();
+        this.addComponentListener(new ComponentListener() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                System.out.println(e.getComponent().getBounds().getSize());
+            }
+
+            @Override
+            public void componentMoved(ComponentEvent e) {
+
+            }
+
+            @Override
+            public void componentShown(ComponentEvent e) {
+
+            }
+
+            @Override
+            public void componentHidden(ComponentEvent e) {
+
+            }
+        });
     }
 
     private  void componentConfig(){
         pChat = new MsgPanel();
-        tMsg = new JTextField();
-        tCurrentChat = new JTextArea();
-        bSend = new JButton();
+        tMsg = new JTextField("tMsg");
+        lCurrentChat = new JLabel("CurrentChat");
+        bSend = new JButton("send");
         tpControl = new JTabbedPane();
     }
 
     private void glConfig(){
-        groupLayout.setHorizontalGroup(
-                groupLayout.createSequentialGroup()
-                        .addComponent(tCurrentChat, 100, 100,100)
-                        .addComponent(pChat, 100, 100, 100)
+        groupLayout.setVerticalGroup(
+                groupLayout.createParallelGroup()
+                    .addGroup(groupLayout.createSequentialGroup()
+                        .addComponent(lCurrentChat, 25, 50,100)
+                        .addComponent(pChat, 300, 550, 700)
                         .addGroup(groupLayout.createParallelGroup()
-                                .addComponent(tMsg, 100, 100, 100)
-                                .addComponent(bSend, 100, 100, 100)
+                            .addComponent(tMsg, 50, 75, 100)
+                            .addComponent(bSend, 50, 75, 100)
                         )
-                        .addComponent(tpControl, 100, 100, 100)
+                    )
+                    .addComponent(tpControl, 700, 700, 700)
+
         );
 
-        groupLayout.setVerticalGroup(
+        groupLayout.setHorizontalGroup(
                 groupLayout.createSequentialGroup()
-                        .addGroup(groupLayout.createParallelGroup()
-                                .addComponent(tCurrentChat)
-                                .addComponent(pChat)
-                                .addGroup(groupLayout.createSequentialGroup()
-                                        .addComponent(tMsg)
-                                        .addComponent(bSend)
-                                )
-                                .addComponent(tpControl)
+                    .addGroup(groupLayout.createParallelGroup()
+                        .addComponent(lCurrentChat, 100, 300, 500)
+                        .addComponent(pChat, 500, 750, 900)
+                        .addGroup(groupLayout.createSequentialGroup()
+                            .addComponent(tMsg, 400, 650, 800)
+                            .addComponent(bSend, 50, 100, 150)
                         )
+                    )
+                    .addComponent(tpControl, 200, 400, 600)
         );
 
         groupLayout.setAutoCreateGaps(true);
