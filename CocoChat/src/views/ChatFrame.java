@@ -13,15 +13,20 @@ public class ChatFrame extends JFrame {
     JLabel lCurrentChat;
     JButton bSend;
     JTabbedPane tpControl;
+    GroupLayout groupLayout;
 
-    GroupLayout groupLayout = new GroupLayout(this.getContentPane());
     public ChatFrame(){
         this.setTitle("CocoChat");
         this.getContentPane().setBackground(Color.lightGray);
         this.setVisible(true);
-        this.setSize(new Dimension(1200, 700));
+        this.setMinimumSize(new Dimension(900,676));
+        this.setPreferredSize(new Dimension(1200, 700));
+        this.revalidate();
+        this.setResizable(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        groupLayout = new GroupLayout(this.getContentPane());
         componentConfig();
+        tpConfig();
         glConfig();
         this.addComponentListener(new ComponentListener() {
             @Override
@@ -46,6 +51,17 @@ public class ChatFrame extends JFrame {
         });
     }
 
+    private void tpConfig(){
+        FriendsPanel friendsPanel = new FriendsPanel();
+        tpControl.add("Amigos", friendsPanel);
+        GroupsPanel groupsPanel = new GroupsPanel();
+        tpControl.add("Grupos", groupsPanel);
+        UsersPanel usersPanel = new UsersPanel();
+        tpControl.add("Usuarios", usersPanel);
+        SettingsPanel settingsPanel = new SettingsPanel();
+        tpControl.add("Settings", settingsPanel);
+    }
+
     private  void componentConfig(){
         pChat = new MsgPanel();
         tMsg = new JTextField("tMsg");
@@ -58,14 +74,14 @@ public class ChatFrame extends JFrame {
         groupLayout.setVerticalGroup(
                 groupLayout.createParallelGroup()
                     .addGroup(groupLayout.createSequentialGroup()
-                        .addComponent(lCurrentChat, 25, 50,100)
-                        .addComponent(pChat, 300, 550, 700)
+                        .addComponent(lCurrentChat, 50, 50,100)
+                        .addComponent(pChat, 200, 550, 700)
                         .addGroup(groupLayout.createParallelGroup()
-                            .addComponent(tMsg, 50, 75, 100)
-                            .addComponent(bSend, 50, 75, 100)
+                            .addComponent(tMsg, 75, 75, 100)
+                            .addComponent(bSend, 75, 75, 100)
                         )
                     )
-                    .addComponent(tpControl, 700, 700, 700)
+                    .addComponent(tpControl, 576, 700, 1080)
 
         );
 
@@ -73,13 +89,13 @@ public class ChatFrame extends JFrame {
                 groupLayout.createSequentialGroup()
                     .addGroup(groupLayout.createParallelGroup()
                         .addComponent(lCurrentChat, 100, 300, 500)
-                        .addComponent(pChat, 500, 750, 900)
+                        .addComponent(pChat, 300, 750, 1050)
                         .addGroup(groupLayout.createSequentialGroup()
-                            .addComponent(tMsg, 400, 650, 800)
-                            .addComponent(bSend, 50, 100, 150)
+                            .addComponent(tMsg, 375, 650, 900)
+                            .addComponent(bSend, 75, 100, 150)
                         )
                     )
-                    .addComponent(tpControl, 200, 400, 600)
+                    .addComponent(tpControl, 200, 400, 700)
         );
 
         groupLayout.setAutoCreateGaps(true);

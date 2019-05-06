@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e7ebe6e-a37d-4cab-9874-49a0d2dda46b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CocoChat/src/views/FriendsPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CocoChat/src/views/GroupsPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CocoChat/src/views/SettingsPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CocoChat/src/views/UsersPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CocoChat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/ChatFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/ChatFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/ChatFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/ChatFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/MsgPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/MsgPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CocoChat/src/views/ChatFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/src/views/ChatFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChatServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilosofosComensales/com/company/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilosofosComensales/com/company/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilosofosComensales/com/company/Filosofo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilosofosComensales/com/company/Filosofo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilosofosComensales/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilosofosComensales/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FilosofosComensales/com/company/Palillo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FilosofosComensales/com/company/Palillo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Canvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Filosofo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Filosofo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Palillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Palillo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChat/src/views/MsgPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/src/views/MsgPanel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
+            <state relative-caret-position="238">
               <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
             </state>
           </provider>
@@ -42,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Filosofo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+            <state relative-caret-position="663">
+              <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -51,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Canvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="204">
               <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -63,12 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Palillo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="833">
               <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-              <folding>
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -106,7 +97,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,6 +119,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -187,17 +178,17 @@
       <workItem from="1556754574343" duration="8204000" />
       <workItem from="1556769880765" duration="650000" />
       <workItem from="1556930263229" duration="9050000" />
+      <workItem from="1557110600139" duration="2128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19930000" />
+    <option name="totallyTimeSpent" value="22058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18322147" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18590604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -233,27 +224,16 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Palillo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding>
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
+        <state relative-caret-position="238">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Canvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="204">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -261,10 +241,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Palillo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Filosofo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+        <state relative-caret-position="663">
+          <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
         </state>
       </provider>
     </entry>
