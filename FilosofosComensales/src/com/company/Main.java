@@ -12,10 +12,11 @@ public class Main {
         Palillo p;
 
         for (int i = 0; i < 5; i++){
-             p = new Palillo();
-             f = new Filosofo(i);
-             filosofos.add(f);
-             palillos.add(p);
+
+            p = new Palillo();
+            f = new Filosofo(i);
+            filosofos.add(f);
+            palillos.add(p);
         }
 
         Canvas canvas = new Canvas(filosofos, palillos);

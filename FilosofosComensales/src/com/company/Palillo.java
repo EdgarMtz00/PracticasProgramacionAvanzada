@@ -6,6 +6,7 @@ public class Palillo {
     private Graphics g;
     private int x, y;
     private Canvas c;
+    private Palillo izq;
 
     /*  Status:
         1: Blanco, disponible.
@@ -13,7 +14,7 @@ public class Palillo {
      */
     private int status;
     private static Color[] colStatus = {Color.white, Color.red};
-    private boolean uso;
+    public boolean uso;
 
     public void setCanvas(Canvas c) {
         this.c = c;
@@ -42,7 +43,7 @@ public class Palillo {
             status = 1;
             uso = true;
             c.repaint();
-            notifyAll();
+            notify();
         }
     }
 
@@ -50,7 +51,7 @@ public class Palillo {
         status = 0;
         uso = false;
         c.repaint();
-        notifyAll();
+        notify();
     }
 
 }

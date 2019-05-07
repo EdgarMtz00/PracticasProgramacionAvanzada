@@ -8,6 +8,7 @@ public class Filosofo implements Runnable{
     private int x, y;
     private long r;
     private Canvas c;
+    private boolean hambre;
     Thread hilo;
     /*  Status:
         1: Blanco, Pensando.
@@ -18,6 +19,7 @@ public class Filosofo implements Runnable{
     private static Color[] colStatus = {Color.white, Color.yellow, Color.green};
     public int id;
     Filosofo(int id){
+        hambre = false;
         status = 0;
         this.id = id;
     }
@@ -36,6 +38,7 @@ public class Filosofo implements Runnable{
         r = (long) (Math.random()*7000);
         System.out.println("piensa");
         Thread.sleep(r);
+        hambre = true;
         status++;
         c.repaint();
     }
@@ -48,6 +51,7 @@ public class Filosofo implements Runnable{
         r = (long) (Math.random() * 7000);
         System.out.println("come");
         Thread.sleep(r);
+        hambre = false;
         der.soltar();
         izq.soltar();
     }
@@ -57,10 +61,14 @@ public class Filosofo implements Runnable{
         int j = 10;
         while (true) {
             try {
-                pensar();
+                if(!hambre) {
+                    pensar();
+                }
                 synchronized (der) {
-                    synchronized (izq) {
-                        comer();
+                    if(!izq.uso) {
+                        synchronized (izq) {
+                            comer();
+                        }
                     }
                 }
             } catch (InterruptedException e) {
