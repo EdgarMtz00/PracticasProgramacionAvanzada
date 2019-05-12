@@ -77,23 +77,6 @@ public class Form extends JFrame implements ActionListener{
     public void paint(Graphics g) {
         super.paint(g);
         dummy.paint(g);
-        System.out.println("lol");
-    }
-
-    int delay = 100; //milliseconds
-
-    private Timer t = new Timer(delay, new ActionListener() {
-        public void actionPerformed(ActionEvent evt) {
-            repaint();
-            System.out.println("lel");
-        }
-    });
-    void start(){
-        t.start();
-    }
-
-    void stop(){
-        t.stop();
     }
 
     public void setInterpreter(Interpreter interpreter){
@@ -110,7 +93,7 @@ public class Form extends JFrame implements ActionListener{
         if(e.getSource() == compile){
             intrp.compile();
         }else{
-            intrp.run();
+            new Thread(intrp).start();
         }
         output.setText(intrp.outputMsg);
     }

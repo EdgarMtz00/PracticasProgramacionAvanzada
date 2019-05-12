@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6bf3572-4d45-43f3-89a2-2dd25ec86e24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../FilosofosComensales/src/com/company/Filosofo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BasesDeDatos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BasesDeDatos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +53,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="21" />
+    <option name="x" value="606" />
+    <option name="y" value="43" />
     <option name="width" value="782" />
     <option name="height" value="688" />
   </component>
@@ -64,6 +64,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -75,8 +77,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -123,23 +123,24 @@
       <workItem from="1554301399380" duration="1515000" />
       <workItem from="1554985272294" duration="446000" />
       <workItem from="1556634590167" duration="1128000" />
+      <workItem from="1557241517204" duration="582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3089000" />
+    <option name="totallyTimeSpent" value="3671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Floobits" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
@@ -153,6 +154,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Floobits" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -170,8 +172,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

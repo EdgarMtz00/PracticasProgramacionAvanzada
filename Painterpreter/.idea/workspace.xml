@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c6bf100-def1-4597-be69-d1da9843ca6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasesDeDatos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BasesDeDatos/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/painterpreter/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/painterpreter/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/painterpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/painterpreter/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sockets/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/painterpreter/Painterpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="329">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -28,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/painterpreter/Dummy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="17">
+              <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -37,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/painterpreter/Form.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="214">
+              <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
               <folding>
                 <element signature="e#2617#2618#0" expanded="true" />
                 <element signature="e#2657#2658#0" expanded="true" />
@@ -50,12 +57,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/painterpreter/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="224" column="46" selection-start-line="224" selection-start-column="46" selection-end-line="224" selection-end-column="46" />
+            <state relative-caret-position="1000">
+              <caret line="207" column="65" lean-forward="true" selection-start-line="207" selection-start-column="65" selection-end-line="207" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Interpreter#0;class#Interpreter#0" />
-                <element signature="method#indexOfEndif#0;class#Interpreter#0" />
               </folding>
             </state>
           </provider>
@@ -76,16 +81,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/painterpreter/Dummy.java" />
-        <option value="$PROJECT_DIR$/src/painterpreter/Interpreter.java" />
         <option value="$PROJECT_DIR$/src/painterpreter/Form.java" />
+        <option value="$PROJECT_DIR$/src/painterpreter/Interpreter.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="20" />
-    <option name="width" value="783" />
-    <option name="height" value="689" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="21" />
+    <option name="width" value="768" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -93,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,7 +121,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,6 +133,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -167,36 +172,46 @@
       <workItem from="1554985274266" duration="513000" />
       <workItem from="1555989441580" duration="1592000" />
       <workItem from="1556753090012" duration="122000" />
+      <workItem from="1557628599912" duration="6458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24991000" />
+    <option name="totallyTimeSpent" value="31449000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="0" y="21" width="768" height="690" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4858757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Floobits" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35906643" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32569557" />
+      <window_info anchor="bottom" id="Floobits" order="13" weight="0.32733223" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -212,24 +227,31 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/painterpreter/Painterpreter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="329">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/painterpreter/Dummy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="17">
+          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/painterpreter/Form.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="214">
+          <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
           <folding>
             <element signature="e#2617#2618#0" expanded="true" />
             <element signature="e#2657#2658#0" expanded="true" />
@@ -239,12 +261,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/painterpreter/Interpreter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="224" column="46" selection-start-line="224" selection-start-column="46" selection-end-line="224" selection-end-column="46" />
+        <state relative-caret-position="1000">
+          <caret line="207" column="65" lean-forward="true" selection-start-line="207" selection-start-column="65" selection-end-line="207" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Interpreter#0;class#Interpreter#0" />
-            <element signature="method#indexOfEndif#0;class#Interpreter#0" />
           </folding>
         </state>
       </provider>
