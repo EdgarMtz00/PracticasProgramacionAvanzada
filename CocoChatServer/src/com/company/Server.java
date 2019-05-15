@@ -1,25 +1,54 @@
 package com.company;
 
-import com.company.tasks.Task;
+import com.company.controllers.Controller;
 import com.company.tasks.TaskManager;
+import com.google.gson.*;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.function.Consumer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class Server {
     private ServerSocket socketServer;
+    private final HashMap<Integer, Socket> loggedClients;
     private final List<Socket> connectedClients;
     private Logger serverLogger;
+    private final static Map<String, Method> serverPathMethods;
+
+    static {
+        Iterable<Class> classes = null;
+        serverPathMethods = new HashMap<>();
+        try {
+            classes = ControllerSearcher.getClasses("com.company.controllers");
+        } catch (ClassNotFoundException | IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+        Objects.requireNonNull(classes).forEach(klass -> {
+            if (!klass.getSuperclass().equals(Controller.class)) {
+                return;
+            }
+            for (Method method : klass.getMethods()) {
+                if (method.isAnnotationPresent(ServerPath.class)) {
+                    ServerPath annotation = method.getAnnotation(ServerPath.class);
+                    serverPathMethods.put(annotation.path(), method);
+                }
+            }
+        });
+    }
 
     Server(int port) throws IOException {
+        loggedClients = new HashMap<>();
         connectedClients = new ArrayList<>();
         socketServer = new ServerSocket(port);
         serverLogger = Logger.getLogger("Server");
@@ -43,6 +72,19 @@ class Server {
             });
             connectedClients.removeAll(clientsToRemove);
             connectedClients.notify();
+            clientsToRemove.forEach(socket -> {
+                Integer objectKey = -1;
+                for (Map.Entry<Integer, Socket> pair : loggedClients.entrySet()) {
+                    if (pair.getValue() == socket) {
+                        objectKey = pair.getKey();
+                        break;
+                    }
+                }
+                if (objectKey == -1) {
+                    return;
+                }
+                loggedClients.remove(objectKey);
+            });
         }
         try {
             Thread.sleep(100);
@@ -60,7 +102,7 @@ class Server {
                     connectedClients.notify();
                 }
 
-                serverLogger.info("Connected client with ip: " + newSocket.getInetAddress());
+                serverLogger.info("Se conecto un cliente, tiene la IP: " + newSocket.getInetAddress());
             } catch (IOException e) {
                 serverLogger.log(Level.SEVERE, e.getMessage());
             }
@@ -81,11 +123,51 @@ class Server {
                         if (stream.available() != 0) {
                             byte[] b = new byte[stream.available()];
                             stream.read(b);
-                            serverLogger.info(new String(b, StandardCharsets.UTF_8));
+                            JsonParser parser = new JsonParser();
+                            JsonObject request = parser.parse(new String(b, StandardCharsets.UTF_8)).getAsJsonObject();
+
+                            TaskManager.enqueue(() -> {
+                                String path = request.get("path").getAsString();
+                                JsonElement methodRequest = request.get("request");
+
+                                try {
+                                    if (serverPathMethods.containsKey(path)) {
+                                        int userId = -1;
+                                        for (Map.Entry<Integer, Socket> pair : loggedClients.entrySet()) {
+                                            if (pair.getValue() == client) {
+                                                userId = pair.getKey();
+                                                break;
+                                            }
+                                        }
+
+                                        JsonObject response = new JsonObject();
+
+                                        serverPathMethods.get(path).invoke(null,
+                                                methodRequest,
+                                                response,
+                                                new ConnectionContext(connectedClients, loggedClients, client, userId));
+                                        client.getOutputStream().write(response.toString().getBytes(StandardCharsets.UTF_8));
+                                        return;
+                                    }
+                                    client.getOutputStream().write("{\"status\": \"noPath\", \"data\": {}}".getBytes(StandardCharsets.UTF_8));
+                                } catch(Exception e) {
+                                    serverLogger.log(Level.SEVERE, e.getMessage());
+                                    try {
+                                        client.getOutputStream().write("{\"status\": \"error\", \"data\": {}}".getBytes(StandardCharsets.UTF_8));
+                                    } catch (IOException e1) {
+                                        serverLogger.log(Level.SEVERE, e1.getMessage());
+                                    }
+                                }
+                            });
                         }
                     }
-                    catch(IOException e) {
+                    catch(IOException | IllegalStateException | JsonSyntaxException | JsonIOException e) {
                         serverLogger.log(Level.SEVERE, e.getMessage());
+                        try {
+                            client.getOutputStream().write("{\"status\": \"error\", \"data\": {}}".getBytes(StandardCharsets.UTF_8));
+                        } catch (IOException e1) {
+                            serverLogger.log(Level.SEVERE, e1.getMessage());
+                        }
                     }
                 });
                 connectedClients.notify();
