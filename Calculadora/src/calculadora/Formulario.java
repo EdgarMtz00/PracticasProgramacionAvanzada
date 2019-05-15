@@ -19,21 +19,23 @@ import javax.swing.JTextField;
  * @author agust
  */
 public class Formulario extends JFrame implements ActionListener{
-    JButton[] botonesNum = new JButton[12];
-    JButton[] botonesOp  = new JButton[5];
-    String[] numeros = {"0", "i", ".", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
-    String[] operaciones = {" = ", " + ", " - ", " * ", " / "};
-    JTextField pantalla = new JTextField();
+    private JButton[] botonesNum = new JButton[12];
+    private JButton[] botonesOp  = new JButton[5];
+    private String[] numeros = {"0", "i", ".", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+    private String[] operaciones = {"=", "+", "-", "*", "/"};
+    private JTextField pantalla = new JTextField();
+    private int contador = 0;
+    private NumComplejo x, y;
+    private String op, opAnt;
+    private Color negro = new Color(43, 39, 39);
+    private Color gris = new Color(103, 101, 101);
+    private Color grisOsc = new Color(71, 68, 68);
 
-    String operacion = "";
-
-    Color negro = new Color(43, 39, 39);
-    Color gris = new Color(103, 101, 101);
-    Color grisOsc = new Color(71, 68, 68);
-
-    Font font = new Font("SansSerif", Font.BOLD, 35);
+    private Font font = new Font("SansSerif", Font.BOLD, 35);
     
     public Formulario(){
+        x = new NumComplejo();
+        y = new NumComplejo();
         config();
         configBotones();
         configPantalla();
@@ -46,6 +48,7 @@ public class Formulario extends JFrame implements ActionListener{
         this.getContentPane().setBackground(grisOsc);
         this.setTitle("Calculadora");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setResizable(false);
         this.setLayout(null);
     }
     
@@ -83,7 +86,39 @@ public class Formulario extends JFrame implements ActionListener{
         botonesOp[0].setForeground(Color.WHITE);
         botonesOp[0].setFont(font);
         botonesOp[0].addActionListener((ActionEvent e) -> {
-            //code here
+            if(contador != 0) {
+                String t = pantalla.getText();
+                if (contador == 2) {
+                    if (!t.contains("i")) {
+                        y.setReal(Integer.parseInt(t));
+                    } else {
+                        y.setImaginario(t);
+                    }
+                } else if (contador == 3) {
+                    if (t.contains("i")) {
+                        y.setImaginario(t);
+                    }
+                }
+                contador = 0;
+                switch (op) {
+                    case "+":
+                        pantalla.setText(x.suma(y).toString());
+                        break;
+                    case "-":
+                        pantalla.setText(x.resta(y).toString());
+                        break;
+                /*case "*":
+                    pantalla.setText(x.multiplicar(y).toString());
+                    break;
+                case "/":
+                    pantalla.setText(x.dividir(y).toString());
+                    break;*/
+                }
+                x = new NumComplejo();
+                y = new NumComplejo();
+            }else{
+                pantalla.setText("");
+            }
         });
         
         for (int i = 1; i < botonesOp.length; i++) {
@@ -99,10 +134,48 @@ public class Formulario extends JFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        Object o = e.getSource();
-        JButton boton = (JButton)o;
-        operacion += boton.getText();
-        pantalla.setText(operacion);
+        JButton button = (JButton) e.getSource();
+        String btnText = button.getText();
+        for (String operacion : operaciones){
+            if(btnText.equals(operacion)){
+                String t = pantalla.getText();
+                pantalla.setText("");
+                switch (contador){
+                    case 0:
+                        if(!t.contains("i")){
+                            x.setReal(Integer.parseInt(t));
+                        }else{
+                            x.setImaginario(t);
+                        }
+                        op = btnText;
+                        break;
+                    case 1:
+                        if(!t.contains("i")){
+                            y.setReal(Integer.parseInt(t));
+                        }else{
+                            x.setImaginario(opAnt + t);
+                            op = button.getText();
+                        }
+                        break;
+                    case 2:
+                        if(!t.contains("i")){
+                            y.setReal(Integer.parseInt(t));
+                        }else{
+                            y.setImaginario(opAnt + t);
+                        }
+                        break;
+                    case 3:
+                        if(t.contains("i")){
+                            y.setImaginario(opAnt + t);
+                        }
+                }
+                System.out.println(x);
+                System.out.println(y);
+                contador++;
+                opAnt = btnText;
+                return;
+            }
+        }
+        pantalla.setText(pantalla.getText() + btnText);
     }
-    
 }

@@ -30,6 +30,11 @@ public class NumComplejo {
         this.imaginario = imaginario;
     }
 
+    public void setImaginario(String imaginario) {
+        imaginario = imaginario.replace("i", "");
+        this.imaginario = Integer.parseInt(imaginario);
+    }
+
     public NumComplejo suma(NumComplejo b){
         res = new NumComplejo();
         res.real = this.real + b.real;
@@ -53,6 +58,19 @@ public class NumComplejo {
             }
         }else{
             System.out.print(real);
+        }
+    }
+
+    @Override
+    public String toString(){
+        if(imaginario != 0.0f){
+            if(imaginario > 0){
+                return real + " + " + imaginario + "i";
+            }else{
+                return real + " " + imaginario + "i";
+            }
+        }else{
+            return Integer.toString((int)real);
         }
     }
 }
