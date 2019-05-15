@@ -36,7 +36,6 @@
       <change afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/ChatsController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/Controller.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/FriendsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/GroupsController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/LoginController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/RegisterController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/UsersController.java" afterDir="false" />
@@ -67,6 +66,7 @@
       <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/TaskManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/GroupsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/GroupsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/tasks/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/tasks/TaskManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" afterDir="false" />
@@ -348,12 +348,12 @@
       <workItem from="1557888119289" duration="219000" />
       <workItem from="1557888437614" duration="1014000" />
       <workItem from="1557889495282" duration="158000" />
-      <workItem from="1557889683894" duration="3682000" />
+      <workItem from="1557889683894" duration="3983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19471000" />
+    <option name="totallyTimeSpent" value="19772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />

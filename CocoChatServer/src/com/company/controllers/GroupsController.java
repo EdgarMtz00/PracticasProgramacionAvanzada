@@ -152,3 +152,10 @@ interface ChatEventListener {
 
 // en lo que maneja el socket del cliente
 
+// Fuera del socket
+List<ChatEventListener> listaBlaBla;
+
+// dentro de recibir mensajes del servidor
+listaBlaBla.forEach(e -> {
+
+})

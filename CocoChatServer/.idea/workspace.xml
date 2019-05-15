@@ -2,77 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d72260a-64c5-4aec-ac07-5059f263c06b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CocoChat/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/lib/gson-2.8.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/views/ChatFrame$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/views/ChatFrame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/views/FriendsPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/views/GroupsPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/views/MsgPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/views/SettingsPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/views/SignFrame$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/views/SignFrame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/production/CocoChat/views/UsersPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/ChatType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/connection/ClientSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/connection/ResponseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/views/FriendsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/views/ListPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/views/SettingsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/views/SignFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CocoChat/theme.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/CocoChatServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/83c984f7-7807-4eee-8296-6bf097684235/storage_v2/_src_/schema/cocochat.MJUiyw.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/83c984f7-7807-4eee-8296-6bf097684235/storage_v2/_src_/schema/cocochat.MJUiyw.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.8.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ConnectionContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ControllerSearcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ServerPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/controllers/ChatsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/controllers/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/controllers/FriendsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/controllers/GroupsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/controllers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/controllers/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/controllers/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/database/PoolManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/.idea/CocoChat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/.idea/CocoChat.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/META-INF/CocoChat.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/META-INF/CocoChat.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/ChatFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/ChatFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/FriendsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/GroupsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/MsgPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/SettingsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/out/production/CocoChat/views/UsersPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/src/views/ChatFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/views/ChatFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/src/views/FriendsPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/src/views/GroupsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/views/GroupsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/src/views/MsgPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/views/MsgPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/src/views/SettingsPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CocoChat/src/views/UsersPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChat/src/com/company/views/UsersPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CocoChatServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CocoChatServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/TaskManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/tasks/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tasks/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GutiServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GutiServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/controllers/GroupsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/controllers/GroupsController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -175,7 +108,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/controllers/GroupsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="179">
               <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
             </state>
           </provider>
@@ -348,16 +281,23 @@
       <workItem from="1557888055588" duration="281000" />
       <workItem from="1557888435188" duration="1017000" />
       <workItem from="1557889492001" duration="161000" />
-      <workItem from="1557889682117" duration="9286000" />
+      <workItem from="1557889682117" duration="9338000" />
     </task>
+    <task id="LOCAL-00001" summary="2 avance para git">
+      <created>1557899292093</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557899292093</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15744000" />
+    <option name="totallyTimeSpent" value="15796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.252349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -368,7 +308,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -393,6 +333,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2 avance para git" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 avance para git" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -478,7 +422,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/controllers/GroupsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="179">
           <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
         </state>
       </provider>
