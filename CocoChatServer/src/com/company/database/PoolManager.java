@@ -56,7 +56,7 @@ public class PoolManager {
         synchronized (mySqlConnections) {
             if (mySqlConnections.empty()) {
                 try {
-                    Connection connection = DriverManager.getConnection ("jdbc:mysql://localhost/prueba", USERNAME, PASSWORD);
+                    Connection connection = DriverManager.getConnection ("jdbc:mysql://localhost/cocochat?serverTimezone=UTC", USERNAME, PASSWORD);
                     logger.info("Se creo una conexión a la base de datos porque ya no había y el hilo " + Thread.currentThread().getId() + " solicitó una");
                     return connection;
                 } catch (SQLException e) {

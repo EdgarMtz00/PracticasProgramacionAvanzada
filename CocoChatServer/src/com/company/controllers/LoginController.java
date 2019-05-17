@@ -10,6 +10,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Clase que maneja los inicios de sesión de un usuario
@@ -40,6 +42,7 @@ public class LoginController extends Controller {
         }
 
         Connection connection = PoolManager.getConnection();
+        connection.setAutoCommit(true);
         try (PreparedStatement userQuery = connection.prepareStatement("SELECT Password, Username, User from user where Username = ?")) {
             userQuery.setString(1, providedUsername);
             ResultSet result = userQuery.executeQuery();
@@ -47,7 +50,7 @@ public class LoginController extends Controller {
                 String password = result.getString(1);
                 String username = result.getString(2);
                 int id = result.getInt(3);
-                if (providedPassword.equals(password)) {
+                if (providedPassword.equals(password) && !context.loggedClients.containsKey(id)) {
                     JsonObject message = new JsonObject();
                     message.addProperty("message", "Acceso correcto");
 
@@ -60,10 +63,25 @@ public class LoginController extends Controller {
                 }
             }
         } catch (SQLException e) {
+            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, e.getMessage());
             e.printStackTrace();
         }
 
         PoolManager.returnConnection(connection);
 
+    }
+
+    /**
+     * Cierra sesión
+     * @param request  Objeto Json con los datos de la petición del usuario
+     * @param response Respuesta Json que se le enviará al cliente
+     * @param context  contexto de la petición
+     * @throws SQLException Excepción SQL en caso de que no pueda obtener una conexión
+     */
+    @ServerPath(path = "logout")
+    public static void logout(JsonElement request, JsonObject response, ConnectionContext context) {
+        context.loggedClients.remove(context.userId);
+        response.addProperty("status", "ok");
+        response.add("data", new JsonObject());
     }
 }

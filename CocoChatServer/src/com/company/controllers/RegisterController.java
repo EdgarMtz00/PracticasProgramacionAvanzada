@@ -19,9 +19,10 @@ public class RegisterController extends Controller {
 
     /**
      * Método que procesa las peticiones de los usuarios en la ruta register
-     * @param request Objeto Json con los datos de la petición del usuario
+     *
+     * @param request  Objeto Json con los datos de la petición del usuario
      * @param response Respuesta Json que se le enviará al cliente
-     * @param context contexto de la petición
+     * @param context  contexto de la petición
      * @throws SQLException Excepción SQL en caso de que no pueda obtener una conexión
      */
     @ServerPath(path = "register")
@@ -53,7 +54,7 @@ public class RegisterController extends Controller {
 
         try {
             PreparedStatement statement = connection
-                    .prepareStatement("INSERT INTO cocochat.user(Username, Password, Names, Lastnames) values (?, ?, ?, ?)");
+                    .prepareStatement("INSERT INTO cocochat.user(Username, Password, Names, Lastnames) values (?, ?, ?, ?)", PreparedStatement.RETURN_GENERATED_KEYS);
             statement.setString(1, username);
             statement.setString(2, password);
             statement.setString(3, names);
@@ -64,9 +65,8 @@ public class RegisterController extends Controller {
 
             try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
                 if (generatedKeys.next()) {
-                    context.loggedClients.put(generatedKeys.getInt(1), context.senderClient);
-                }
-                else {
+                    // context.loggedClients.put(generatedKeys.getInt(1), context.senderClient);
+                } else {
                     throw new SQLException("Creating user failed, no ID obtained.");
                 }
             }

@@ -1,8 +1,10 @@
 package com.company;
 
+
 public enum ChatType {
-    Friend,
+    friends,
     groups,
-    User,
+    users,
+    friendRequests,
     None
 }

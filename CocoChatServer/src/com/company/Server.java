@@ -7,18 +7,18 @@ import com.google.gson.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
-import java.util.function.Consumer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Clase que gestiona todo lo del servidor
+ */
 class Server {
     private ServerSocket socketServer;
     private final HashMap<Integer, Socket> loggedClients;
@@ -47,6 +47,10 @@ class Server {
         });
     }
 
+    /**
+     * Constructor del servidor
+     * @param port número de puerto del servidor
+     */
     Server(int port) throws IOException {
         loggedClients = new HashMap<>();
         connectedClients = new ArrayList<>();
@@ -57,6 +61,9 @@ class Server {
 
     }
 
+    /**
+     * Verifica la conexión de los clientes
+     */
     private void verifyConnection() {
         synchronized (connectedClients) {
             List<Socket> clientsToRemove = new ArrayList<>();
@@ -93,6 +100,9 @@ class Server {
         }
     }
 
+    /**
+     * Queda en escucha de clientes
+     */
     private void listenForClients() {
         while (true) {
             try {
@@ -109,11 +119,17 @@ class Server {
         }
     }
 
+    /**
+     * Corre el servidor y espera por clientes
+     */
     void runForever() {
-        serverLogger.info("Se inició el socket");
+        serverLogger.info("Se inició el servidor, have fun!");
         listenForClients();
     }
 
+    /**
+     * Espera por datos de usuarios
+     */
     private void waitForData() {
         while (true) {
             synchronized (connectedClients) {
@@ -153,7 +169,12 @@ class Server {
                                 } catch(Exception e) {
                                     serverLogger.log(Level.SEVERE, e.getMessage());
                                     try {
-                                        client.getOutputStream().write("{\"status\": \"error\", \"data\": {}}".getBytes(StandardCharsets.UTF_8));
+                                        JsonObject response = new JsonObject();
+                                        response.addProperty("status", "error");
+                                        JsonObject errorMessage = new JsonObject();
+                                        errorMessage.addProperty("mensaje", e.getMessage());
+                                        response.add("data", errorMessage);
+                                        client.getOutputStream().write(response.toString().getBytes(StandardCharsets.UTF_8));
                                     } catch (IOException e1) {
                                         serverLogger.log(Level.SEVERE, e1.getMessage());
                                     }

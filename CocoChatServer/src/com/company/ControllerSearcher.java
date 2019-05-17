@@ -9,7 +9,15 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
+/**
+ * Clase que busca controladores
+ */
 public class ControllerSearcher {
+    /**
+     * Obtiene las clases de un pacquete
+     * @param packageName nombre del paquete
+     * @return Iterador con las tareas
+     */
     public static Iterable<Class> getClasses(String packageName) throws ClassNotFoundException, IOException, URISyntaxException {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         String path = packageName.replace('.', '/');
@@ -28,6 +36,13 @@ public class ControllerSearcher {
         return classes;
     }
 
+    /**
+     * Obtiene las clases
+     * @param directory
+     * @param packageName
+     * @return
+     * @throws ClassNotFoundException
+     */
     private static List<Class> findClasses(File directory, String packageName) throws ClassNotFoundException {
         List<Class> classes = new ArrayList<Class>();
         if (!directory.exists()) {

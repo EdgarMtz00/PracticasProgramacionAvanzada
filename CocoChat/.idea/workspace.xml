@@ -2,10 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d579432-ea28-4ef9-ab3f-dba77f4a8467" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CocoChatServer/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CocoChat_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/artifacts/CocoChat_jar/CocoChat.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/ChatType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/connection/ClientSocket$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/connection/ClientSocket.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/connection/EventListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/connection/RequestEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/connection/ResponseListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/ChatFrame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/ChatFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/FriendsPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/GroupsPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/ListPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/ListPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/ListPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/MsgPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/MsgPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/MsgPanel$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/MsgPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/SettingsPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/SettingsPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/SignFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/com/company/views/UsersPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/views/ChatFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/production/CocoChat/views/MsgPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/connection/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/connection/RequestEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CocoChatServer/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CocoChatServer/hs_err_pid10440.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CocoChatServer/hs_err_pid16516.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/META-INF/CocoChat.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/ChatType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/ChatType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/connection/ClientSocket$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/connection/ClientSocket$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/connection/ClientSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/connection/ClientSocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/ChatFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/ChatFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/ListPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/ListPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/ListPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/ListPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/ListPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/ListPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/MsgPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/MsgPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/SettingsPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/SettingsPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/SettingsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/SettingsPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/SignFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CocoChat/com/company/views/SignFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ChatType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ChatType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/connection/ClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/connection/ClientSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/views/ChatFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/views/ChatFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/views/FriendsPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/views/GroupsPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/views/ListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/views/ListPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/views/MsgPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/views/MsgPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/views/SettingsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/views/SettingsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/views/SignFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/views/SignFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/views/UsersPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/.idea/dataSources/83c984f7-7807-4eee-8296-6bf097684235/storage_v2/_src_/schema/cocochat.MJUiyw.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/.idea/dataSources/83c984f7-7807-4eee-8296-6bf097684235/storage_v2/_src_/schema/cocochat.MJUiyw.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CocoChatServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/ControllerSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/ControllerSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/ChatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/ChatsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/FriendsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/FriendsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/GroupsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/GroupsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/controllers/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/database/PoolManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/database/PoolManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/tasks/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/tasks/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CocoChatServer/src/com/company/tasks/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CocoChatServer/src/com/company/tasks/TaskManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,20 +90,66 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/ChatType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/views/SignFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1883">
+              <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/views/SettingsPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/views/ListPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="e#2030#5075#0" expanded="true" />
+                <element signature="e#5074#5075#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/connection/ClientSocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2329">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/views/ChatFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2444">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -68,6 +182,7 @@
         <option value="$PROJECT_DIR$/src/com/company/views/SettingsPanel.java" />
         <option value="$PROJECT_DIR$/src/com/company/views/ChatFrame.java" />
         <option value="$PROJECT_DIR$/src/com/company/views/ListPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/views/SignFrame.java" />
       </list>
     </option>
   </component>
@@ -78,8 +193,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="20" />
+    <option name="x" value="342" />
+    <option name="y" value="160" />
     <option name="width" value="785" />
     <option name="height" value="690" />
   </component>
@@ -92,6 +207,27 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="CocoChat" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="CocoChat" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="CocoChat" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="CocoChat" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="CocoChat" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="CocoChat" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,34 +264,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="CocoChat" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="CocoChat" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="CocoChat" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="CocoChat" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="CocoChat" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="CocoChat" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CocoChatServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jessica/Painterpreter" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -212,16 +327,17 @@
       <workItem from="1557889495282" duration="158000" />
       <workItem from="1557889683894" duration="3983000" />
       <workItem from="1557901108886" duration="601000" />
+      <workItem from="1558056053351" duration="1254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20373000" />
+    <option name="totallyTimeSpent" value="21627000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18154311" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18389262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -237,7 +353,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Floobits" order="9" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Floobits" order="9" visible="true" weight="0.3243626" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -264,27 +380,64 @@
     <entry file="file://$PROJECT_DIR$/src/views/MsgPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/views/GroupsPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/views/ChatFrame.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/views/FriendsPanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/connection/ClientSocket.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/views/UsersPanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/ChatType.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/views/SettingsPanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/views/ChatFrame.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/views/SignFrame.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/views/ListPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="136">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2030#5075#0" expanded="true" />
+            <element signature="e#5074#5075#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/views/ListPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/connection/ClientSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2329">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/views/FriendsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/views/ChatFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2444">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/ChatType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/views/SignFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1883">
+          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/views/SettingsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
         </state>
       </provider>
     </entry>

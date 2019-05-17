@@ -7,10 +7,25 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Clase que gestiona las tareas multihilo
+ */
 public class TaskManager {
+    /**
+     * Hilos que ejecutarán tareas
+     */
     private static List<Thread> workerThreads;
+    /**
+     * Tareas pendientes
+     */
     private final static BlockingQueue<Task> pendingTasks;
+    /**
+     * Logger que imprimirá cosas que sucedan en el servidor
+     */
     private static Logger taskManagerLogger;
+    /**
+     * Número minimo de hilos
+     */
     private static final int MIN_WORKER_THREADS = 8;
 
     static {
@@ -38,6 +53,10 @@ public class TaskManager {
         }
     }
 
+    /**
+     * Encola una tarea
+     * @param task tarea que se ejecutará en un hilo
+     */
     public static void enqueue(Task task) {
         try {
             pendingTasks.put(task);

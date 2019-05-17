@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="11c6714b-a5be-4cb2-a462-cd0a647762c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../BasesDeDatos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BasesDeDatos/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Formulario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Formulario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculadora/calculadora/NumComplejo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculadora/calculadora/NumComplejo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/Formulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculadora/Formulario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/NumComplejo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculadora/NumComplejo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Form$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sockets/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/Calculadora.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/Formulario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplejo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/calculadora/Calculadora.java" />
+        <option value="$PROJECT_DIR$/src/calculadora/NumComplejo.java" />
+        <option value="$PROJECT_DIR$/src/calculadora/Formulario.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="20" />
+    <option name="width" value="785" />
+    <option name="height" value="690" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Calculadora" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calculadora" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calculadora" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calculadora" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Calculadora" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Calculadora" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="calculadora" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Painterpreter" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Calculadora" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="calculadora.Calculadora" />
+      <module name="Calculadora" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11c6714b-a5be-4cb2-a462-cd0a647762c4" name="Default Changelist" comment="" />
+      <created>1554347139997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554347139997</updated>
+      <workItem from="1554347141611" duration="641000" />
+      <workItem from="1554347810868" duration="3418000" />
+      <workItem from="1554423962636" duration="19000" />
+      <workItem from="1554424165621" duration="2197000" />
+      <workItem from="1557635128921" duration="9834000" />
+      <workItem from="1557677140554" duration="1640000" />
+      <workItem from="1557701125241" duration="248000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17997000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27155825" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32569557" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="Floobits" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/calculadora/Formulario.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/calculadora/Operacion.java" />
+    <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplex.java" />
+    <entry file="file://$USER_HOME$/Desktop/NumComplex.java" />
+    <entry file="file://$PROJECT_DIR$/src/calculadora/Calculadora.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplejo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/Formulario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
