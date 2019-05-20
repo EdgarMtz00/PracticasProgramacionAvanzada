@@ -2,23 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c6714b-a5be-4cb2-a462-cd0a647762c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BasesDeDatos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BasesDeDatos/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CalculadoraLambdas/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CalculadoraLambdas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CalculadoraLambdas/src/com/company/Formulario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CalculadoraLambdas/src/com/company/NumComplejo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/calculadora/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/calculadora/Calculadora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/calculadora/Formulario.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/calculadora/Formulario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/calculadora/NumComplejo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/calculadora/NumComplejo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Calculadora.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Formulario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculadora/calculadora/Formulario.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calculadora/calculadora/NumComplejo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calculadora/calculadora/NumComplejo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculadora/Calculadora.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calculadora/Formulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculadora/Formulario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calculadora/NumComplejo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculadora/NumComplejo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Filosofo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/out/production/FilosofosComensales/com/company/Palillo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Form$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Form.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/out/production/Painterpreter/painterpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Form.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Painterpreter/src/painterpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sockets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CalculadoraImaginarios/src/calculadoraimaginarios/CalculadoraImaginarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculadoraImaginarios/src/calculadoraimaginarios/CalculadoraImaginarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CalculadoraImaginarios/src/calculadoraimaginarios/Formulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculadoraImaginarios/src/calculadoraimaginarios/Formulario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CalculadoraImaginarios/src/calculadoraimaginarios/NumComplejo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculadoraImaginarios/src/calculadoraimaginarios/NumComplejo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jessica/Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jessica/Calculadora/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jessica/FilosofosComensales/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jessica/FilosofosComensales/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,26 +54,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculadora/Calculadora.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/calculadora/Formulario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+            <state relative-caret-position="68">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/Formulario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1186">
+              <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplejo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            <state relative-caret-position="491">
+              <caret line="73" column="144" selection-start-line="73" selection-start-column="144" selection-end-line="73" selection-end-column="144" />
             </state>
           </provider>
         </entry>
@@ -89,8 +94,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/calculadora/Calculadora.java" />
-        <option value="$PROJECT_DIR$/src/calculadora/NumComplejo.java" />
         <option value="$PROJECT_DIR$/src/calculadora/Formulario.java" />
+        <option value="$PROJECT_DIR$/src/calculadora/NumComplejo.java" />
       </list>
     </option>
   </component>
@@ -136,7 +141,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Painterpreter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -180,17 +188,20 @@
       <workItem from="1557635128921" duration="9834000" />
       <workItem from="1557677140554" duration="1640000" />
       <workItem from="1557701125241" duration="248000" />
+      <workItem from="1558221939604" duration="5416000" />
+      <workItem from="1558302267644" duration="2164000" />
+      <workItem from="1558307018977" duration="179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17997000" />
+    <option name="totallyTimeSpent" value="25756000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27155825" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28322148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -199,7 +210,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3243626" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -225,40 +236,28 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/calculadora/Formulario.java</url>
-          <line>136</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/calculadora/Operacion.java" />
     <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplex.java" />
     <entry file="file://$USER_HOME$/Desktop/NumComplex.java" />
     <entry file="file://$PROJECT_DIR$/src/calculadora/Calculadora.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplejo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calculadora/Formulario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+        <state relative-caret-position="-1186">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/NumComplejo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="73" column="144" selection-start-line="73" selection-start-column="144" selection-end-line="73" selection-end-column="144" />
         </state>
       </provider>
     </entry>

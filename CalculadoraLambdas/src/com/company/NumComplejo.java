@@ -1,5 +1,4 @@
-package calculadoraimaginarios;
-
+package com.company;
 
 public class NumComplejo {
     private double real, imaginario;
@@ -63,23 +62,15 @@ public class NumComplejo {
         NumComplejo aNew = this.multiplicar(conj);
         NumComplejo bNew = b.multiplicar(conj);
         String out =  "("+aNew.getReal()+"/"+bNew.getReal();
-        if(aNew.imaginario >= 0){
+        if(aNew.imaginario >= 0)
             out+="+";
-        }
         out += aNew.imaginario+"i/"+bNew.real+")";
         return out;
     }
 
     @Override
     public String toString(){
-        if(imaginario != 0.0f){
-            if(imaginario > 0){
-                return real + " + " + imaginario + "i";
-            }else{
-                return real + " " + imaginario + "i";
-            }
-        }else{
-            return Integer.toString((int)real);
-        }
+        // Los operadores ternarios son lo maximo
+        return (imaginario == 0.0f)? Double.toString(real) : (imaginario > 0) ? real + " + " + imaginario + "i" : real + " " + imaginario + "i";
     }
 }

@@ -1,5 +1,4 @@
-package calculadoraimaginarios;
-
+package calculadoreaimaginarios2;
 
 public class NumComplejo {
     private double real, imaginario;
@@ -63,9 +62,8 @@ public class NumComplejo {
         NumComplejo aNew = this.multiplicar(conj);
         NumComplejo bNew = b.multiplicar(conj);
         String out =  "("+aNew.getReal()+"/"+bNew.getReal();
-        if(aNew.imaginario >= 0){
+        if(aNew.imaginario >= 0)
             out+="+";
-        }
         out += aNew.imaginario+"i/"+bNew.real+")";
         return out;
     }

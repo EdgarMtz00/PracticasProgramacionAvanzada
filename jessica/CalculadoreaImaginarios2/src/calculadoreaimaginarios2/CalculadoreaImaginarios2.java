@@ -1,6 +1,6 @@
-package calculadora;
+package calculadoreaimaginarios2;
 
-public class Calculadora {
+public class CalculadoreaImaginarios2 {
 
     public static void main(String[] args) {
         // TODO code application logic here

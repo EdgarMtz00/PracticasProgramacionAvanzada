@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c6714b-a5be-4cb2-a462-cd0a647762c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Calculadora/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CalculadoraLambdas/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CalculadoraLambdas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CalculadoraLambdas/src/com/company/Formulario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CalculadoraLambdas/src/com/company/NumComplejo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/build/classes/calculadora/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/build/classes/calculadora/Calculadora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/build/classes/calculadora/Formulario.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/build/classes/calculadora/Formulario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/build/classes/calculadora/NumComplejo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/build/classes/calculadora/NumComplejo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Calculadora/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/out/production/Calculadora/calculadora/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/out/production/Calculadora/calculadora/Calculadora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/out/production/Calculadora/calculadora/Formulario.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/out/production/Calculadora/calculadora/Formulario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/out/production/Calculadora/calculadora/NumComplejo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/out/production/Calculadora/calculadora/NumComplejo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/src/calculadora/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/src/calculadora/Calculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/src/calculadora/Formulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/src/calculadora/Formulario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Calculadora/src/calculadora/NumComplejo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Calculadora/src/calculadora/NumComplejo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CalculadoraImaginarios/src/calculadoraimaginarios/CalculadoraImaginarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CalculadoraImaginarios/src/calculadoraimaginarios/CalculadoraImaginarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CalculadoraImaginarios/src/calculadoraimaginarios/Formulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CalculadoraImaginarios/src/calculadoraimaginarios/Formulario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CalculadoraImaginarios/src/calculadoraimaginarios/NumComplejo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CalculadoraImaginarios/src/calculadoraimaginarios/NumComplejo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilosofosComensales/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculadora/Calculadora.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="323">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -45,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/calculadora/Formulario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+            <state relative-caret-position="561">
+              <caret line="61" column="5" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,6 +115,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,8 +139,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,16 +193,18 @@
       <workItem from="1557677140554" duration="1640000" />
       <workItem from="1557701125241" duration="248000" />
       <workItem from="1558116391956" duration="2901000" />
+      <workItem from="1558220429877" duration="1484000" />
+      <workItem from="1558307041876" duration="342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20898000" />
+    <option name="totallyTimeSpent" value="22724000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2753404" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28322148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -236,8 +257,8 @@
     <entry file="file://$USER_HOME$/Desktop/NumComplex.java" />
     <entry file="file://$PROJECT_DIR$/src/calculadora/Calculadora.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="323">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -250,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calculadora/Formulario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        <state relative-caret-position="561">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
