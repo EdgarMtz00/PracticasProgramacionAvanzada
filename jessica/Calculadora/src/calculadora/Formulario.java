@@ -107,12 +107,12 @@ public class Formulario extends JFrame implements ActionListener{
                     case "-":
                         pantalla.setText(x.resta(y).toString());
                         break;
-                /*case "*":
+                case "*":
                     pantalla.setText(x.multiplicar(y).toString());
                     break;
                 case "/":
                     pantalla.setText(x.dividir(y).toString());
-                    break;*/
+                    break;
                 }
                 x = new NumComplejo();
                 y = new NumComplejo();

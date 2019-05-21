@@ -49,16 +49,23 @@ public class NumComplejo {
         return res;
     }
 
-    public void printComplex(){
-        if(imaginario != 0.0f){
-            if(imaginario > 0){
-                System.out.print(real + " + " + imaginario + "i");
-            }else{
-                System.out.println(real + " " + imaginario + "i");
-            }
-        }else{
-            System.out.print(real);
-        }
+    public NumComplejo multiplicar(NumComplejo b){
+        res = new NumComplejo();
+        res.real = (this.real * b.real) - (this.imaginario * b.imaginario);
+        res.imaginario = (this.real * b.imaginario) + (this.imaginario * b.real);
+        return res;
+    }
+
+    public String dividir(NumComplejo b)
+    {
+        NumComplejo conj = new NumComplejo(b.imaginario, (b.imaginario * -1.0));
+        NumComplejo aNew = this.multiplicar(conj);
+        NumComplejo bNew = b.multiplicar(conj);
+        String out =  "("+aNew.getReal()+"/"+bNew.getReal();
+        if(aNew.imaginario >= 0)
+            out+="+";
+        out += aNew.imaginario+"i/"+bNew.real+")";
+        return out;
     }
 
     @Override
